@@ -18,6 +18,10 @@ for usuario in usuarios:
         print('\nSenhor(a) "' + str(usuario).title() + '" loggin realizado! \n')
 
 
+del usuarios
 ### VERIFICAR SE A LISTA TEM NOME DE USUARIO IGUAL
-### CRIE UMA LISTA CHAMADA current_users 
+### CRIE UMA LISTA CHAMADA current_users COM CINCO OU MAIS NOMES 
 print('-'*50)
+
+current_users = ['maria', 'paulo', 'silvia', 'admin', 'joao', 'ciro', 'jose']
+
