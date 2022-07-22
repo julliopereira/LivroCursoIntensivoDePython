@@ -8,7 +8,8 @@ valor.
 { chave: valor, chave: valor } 
 '''
 
-### EXEMPLO:
+### EXEMPLO - SOLICITANDO O VALOR DA CHAVE 'cor':
 print('-'*50)
-alien_0 = {'cor': 'verde', 'pontos': 5}
-print(alien_0['cor'])
+
+alien_0 = {'cor': 'verde', 'pontos': 5}     # DICIONARIO COM 2 
+print(alien_0['cor'] + '\n')
