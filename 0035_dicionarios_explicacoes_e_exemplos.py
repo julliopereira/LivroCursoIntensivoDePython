@@ -24,3 +24,14 @@ alien = alien_0['pontos']                   # ATRIBUINDO O VALOR DA CHAVE 'ponto
 print(str(alien) + '\n')                    # MOSTRANDO O VALOR DA VARIÁVEL
 
 
+### EXEMPLO 3 - COMEÇANDO DICIONARIO VAZIO:
+print('-'*50)
+
+alien_0 = {}                                # CRIANDO DICIONÁRIO VAZIO
+
+alien_0['cor'] = 'verde'
+alien_0['pontos'] = 5
+
+print(alien_0)
+
+
