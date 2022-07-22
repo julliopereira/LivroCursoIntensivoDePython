@@ -15,4 +15,6 @@ else:
 ### AGORA EXCREVER CÓDIGA PARA POPULAR A LISTA
 print('-'*50)
 
-ingredientes_disponiveis = ['tomate', '', '', '', '', '']
+ingredientes_disponiveis = ['tomate', 'azeite', 'queijo', 'peperoni', 'ovo', 'anchova']
+
+ingredientes_escolhidos = ['tomate', 'azeite', '']
