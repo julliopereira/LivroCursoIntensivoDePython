@@ -7,11 +7,13 @@ print('-'*50)
 for usuario in usuarios:
     print('\nSenhor(a) "' + str(usuario).title() + '" loggin realizado! \n')
 
-### SE O USUÁRIO FOR admin EXIBA MENSAGEM ESPECIAL
+### SE O USUÁRIO FOR admin EXIBA MENSAGEM ESPECIAL SE NÃO MOSTRE MENSAGEM COMUM AOS DEMAIS COM else
 print('-'*50)
 login = 'admin'
 
 for usuario in usuarios:
     if login.lower() in usuario:
         print('\nOlá senhor "' + str(usuario).title() + '" gostaria de ver um relatório de status? ... \n' )
+    else:
+        print('\nSenhor(a) "' + str(usuario).title() + '" loggin realizado! \n')
 
