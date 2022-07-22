@@ -17,4 +17,11 @@ print('-'*50)
 
 ingredientes_disponiveis = ['tomate', 'azeite', 'queijo', 'peperoni', 'ovo', 'anchova']
 
-ingredientes_escolhidos = ['tomate', 'azeite', '']
+ingredientes_escolhidos = ['tomate', 'azeite', 'queijo']
+
+if ingredientes_escolhidos:
+    for ingrediente in ingredientes_escolhidos:
+        print('Adicionando ' + ingrediente + '.\n')
+    print('\nFinalizado, fazendo a pizza !! \n')
+else:
+    print('Está certo de que quer uma pizza sem recheio ?')
