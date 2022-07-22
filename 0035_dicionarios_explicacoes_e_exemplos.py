@@ -15,11 +15,12 @@ alien_0 = {'cor': 'verde', 'pontos': 5}     # DICIONARIO COM 2 PARES { 'chave:va
 
 print(alien_0['cor'] + '\n')                # SOLICITANDO VALOR DE UM DICIONÁRIO COM PRINT
 
+
 ### EXEMPLO 2 - SOLICITANDO O VALOR DA CHAVE 'pontos' SE UTILIZANDO DE VARIAVEL:
 print('-'*50)
 
-alien = alien_0['pontos']
+alien = alien_0['pontos']                   # ATRIBUINDO O VALOR DA CHAVE 'pontos' 
 
-print(alien)
+print(alien + '\n')                         # 
 
 
