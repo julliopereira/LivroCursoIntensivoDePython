@@ -6,4 +6,5 @@ admin = ['maria', 'paulo', 'silvia', 'joao', 'ciro', 'jose']
 login = 'joao'
 
 for a in admin:
-    if 
+    if login.lower() in admin:
+        print('Olá senhor')
