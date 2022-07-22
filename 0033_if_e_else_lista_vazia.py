@@ -9,7 +9,7 @@ if ingrediente:
         print('Adicionando ' + ingrediente + '.\n')
     print('\nFinalizado, fazendo a pizza')
 else:
-    print('Está certo de que quer uma pizza sem recheio ?')
+    print('Está certo de que quer uma pizza sem recheio ? \n')
 
 
 ### AGORA EXCREVER CÓDIGA PARA POPULAR A LISTA
