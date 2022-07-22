@@ -18,6 +18,7 @@ print(text.lstrip())                    # rstip - Remover ESPAÇOS a direita e e
 
 
 ### LISTAS
+
 print('-'*50)
 
 lista = ['honda', 'ducatti', 'yamaha']
@@ -35,6 +36,7 @@ lista.sort(reverse=True)                       # sort   - Ordena porém em ordem
 lista.reverse()                                # reverse- Alterar o SENTIDO da lista ( o ultimo vira primeiro e o primeiro vira último)
 
 ### DISSIONÁRIOS
+
 print('-'*50)
 
 dissionario = {                                
@@ -49,7 +51,16 @@ for key, value in dissionario.items():         # items      - Método responsáv
     ' gosta de ' +
     str(value))
 
-for key in dissionario.keys():         # items      - Método responsável por extrair os valores keys e values do dissionário 
-    print(str(key) +
-    ' gosta de ' +
-    str(value))
+print()
+
+for key in dissionario.keys():                 # keys      - Método responsável por extrair o valor keys do dissionário 
+    print('Seu nome é: ' +
+     str(key) +
+    ' \n' )
+
+print()
+
+for key in dissionario.values():               # values      - Método responsável por extrair o valor values do dissionário 
+    print('Esporte favorito é:  ' +
+     str(key) +
+    ' \n' )
