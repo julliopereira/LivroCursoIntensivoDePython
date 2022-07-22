@@ -32,6 +32,13 @@ lista.sort()                                   # sort   - Altera a lista em orde
 lista.sort(reverse=True)                       # sort   - Ordena porém em ordem reversa      [PERMANENTE]
 lista.reverse()                                # reverse- Alterar o SENTIDO da lista ( o ultimo vira primeiro e o primeiro vira último)
 
+### DISSIONÁRIOS
 
+dissionario = {
+    'marcio': 'futebol',
+    'sara': 'baisebol',
+    'eduardo': 'voley',
+    'maria': 'basquete',
+    }
 
 
