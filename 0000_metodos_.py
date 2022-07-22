@@ -18,6 +18,8 @@ print(text.lstrip())                    # rstip - Remover ESPAÇOS a direita e e
 
 
 ### LISTAS
+print('-'*50)
+
 lista = ['honda', 'ducatti', 'yamaha']
 
 lista.append('bmw')                            # append - Adiciona valor na ultima posição da lista
@@ -33,12 +35,21 @@ lista.sort(reverse=True)                       # sort   - Ordena porém em ordem
 lista.reverse()                                # reverse- Alterar o SENTIDO da lista ( o ultimo vira primeiro e o primeiro vira último)
 
 ### DISSIONÁRIOS
+print('-'*50)
 
-dissionario = {
+dissionario = {                                
     'marcio': 'futebol',
     'sara': 'baisebol',
     'eduardo': 'voley',
     'maria': 'basquete',
     }
 
+for key, value in dissionario.items():         # items      - Método responsável por extrair os valores keys e values do dissionário 
+    print(str(key) +
+    ' gosta de ' +
+    str(value))
 
+for key in dissionario.keys():         # items      - Método responsável por extrair os valores keys e values do dissionário 
+    print(str(key) +
+    ' gosta de ' +
+    str(value))
