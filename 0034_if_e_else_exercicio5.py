@@ -5,7 +5,7 @@ usuarios = ['maria', 'paulo', 'silvia', 'joao', 'ciro', 'jose', 'admin']
 ### ESCREVER UMA SAUDAÇÃO PARA CADA USUÁRIO APÓS LOGIN
 print('-'*50)
 for usuario in usuarios:
-    print('\nSenhor(a)' )
+    print('\nSenhor(a)' + str(usuario).title() + ' loggin realizado \n')
 
 ### SE O USUÁRIO FOR admin EXIBA MENSAGEM ESPECIAL
 print('-'*50)
