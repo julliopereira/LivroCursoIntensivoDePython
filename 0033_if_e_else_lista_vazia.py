@@ -2,16 +2,17 @@
 ### SE A LISTA ESTIVER VAZIA ENTÃO O if VAI RETORNAR False E USAR else PARA MOSTRAR MENSAGEM
 ### SE A LISTA ESTIVER QUALQUER INFORMAÇÃO O if VAI RETORNAR True E USAR if PARA MOSTRAR MENSAGEM
 
-ingrediente = []
+ingredientes = []
 
 if ingrediente:
-    for lista in ingredientes:
+    for ingrediente in ingredientes:
         print('Adicionando ' + ingrediente + '.\n')
     print('\nFinalizado, fazendo a pizza')
 else:
     print('Está certo de que quer uma pizza sem recheio ? \n')
 
 
+del ingrediente
 ### AGORA EXCREVER CÓDIGA PARA POPULAR A LISTA
 print('-'*50)
 
