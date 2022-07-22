@@ -5,6 +5,6 @@ listas = []
 if listas:
     for lista in listas:
         print('Adicionando' + lista + '.\n')
+    print('\nFinalizado, fazendo a pizza')
 
-        
 
