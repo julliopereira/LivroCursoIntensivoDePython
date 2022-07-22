@@ -9,5 +9,6 @@ valor.
 '''
 
 ### EXEMPLO:
-
-alien_0 = {'cor': 'verde', }
+print('-'*50)
+alien_0 = {'cor': 'verde', 'pontos': 5}
+print(alien_0['cor'])
