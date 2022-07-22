@@ -7,4 +7,7 @@ login = 'joao'
 
 for a in admin:
     if login.lower() in a:
-        print('Olá senhor "' + str(login).title() + '" você está entrando no sistema. \n' )
+        print('\nOlá senhor "' + str(a).title() + '" você está entrando no sistema... \n' )
+
+### 
+print('-'*50)
