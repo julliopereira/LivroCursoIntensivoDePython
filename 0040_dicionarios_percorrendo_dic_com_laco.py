@@ -1,8 +1,10 @@
 ### UTILIZANDO LAÇO PARA PERCORRER A LISTA
 
 '''
-É importante entender que para puxar o valor de key ou valores
+É importante entender que para puxar o valor de key e valores
 deve-se utilizar o MÉTODO items() que engloba keys() e values() no laço.
+E para puxar o valor de key é necessário utilizar o MÉTODO keys() e 
+para puxar o valor de values é necessário utilizar values().
 '''
 
 print('-'*50)
@@ -28,6 +30,20 @@ num_favoritos = {
     }
 
 for nome in num_favoritos.keys():                     # ATRIBUI À VARIÁL nome OS VALORES de NOME
-    print('O nome é ' + str(nome).title())            # MOSTRA O VALOR key e values
+    print('O nome é: ' + str(nome).title())            # MOSTRA O VALOR key 
+print('\n')
+
+
+### PARA TRABALHAR COM O VALOR values É NECESSÁRIO UTILIZAR O MÉTODO values()
+print('-'*50)
+linguagens_favoritas = {
+    'joao': 'python',
+    'sara': 'c',
+    'eduardo': 'ruby',
+    'phil': 'python',
+    }
+
+for nome in linguagens_favoritas.values():             # ATRIBUI À VARIÁVEL nome OS VALORES de LINGUAGENS DE PROGRAMAÇÃO
+    print('O nome é: ' + str(nome).title())            # MOSTRA O VALOR values 
 print('\n')
 
