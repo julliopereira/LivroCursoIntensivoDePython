@@ -13,4 +13,5 @@ login = 'admin'
 
 for usuario in usuarios:
     if login.lower() in usuario:
-        print('\nOlá senhor "' + str(usuario).title() + '" você é o super e loggin foi realizado! ... \n' )
+        print('\nOlá senhor "' + str(usuario).title() + '" gostaria de ver um relatório de status? ... \n' )
+
