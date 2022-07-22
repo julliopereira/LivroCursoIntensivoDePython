@@ -6,5 +6,5 @@ admin = ['maria', 'paulo', 'silvia', 'joao', 'ciro', 'jose']
 login = 'joao'
 
 for a in admin:
-    if login.lower() in admin:
-        print('Olá senhor "' + str(login).title() + '"  ' )
+    if login.lower() in a:
+        print('Olá senhor "' + str(login).title() + '" você está entrando no sistema. \n' )
