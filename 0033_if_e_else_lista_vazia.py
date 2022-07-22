@@ -12,3 +12,6 @@ else:
     print('Está certo de que quer uma pizza sem recheio ?')
 
 
+### AGORA EXCREVER CÓDIGA PARA POPULAR A LISTA
+print('-'*50)
+
