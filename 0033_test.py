@@ -1,7 +1,10 @@
 ### VERIFICAR SE LISTA ESTÁ VAZIA
 
-lista = []
+listas = []
 
-if lista:
-    for lista in 
+if listas:
+    for lista in listas:
+        print('Adicionando' + lista + '.\n')
+
+        
 
