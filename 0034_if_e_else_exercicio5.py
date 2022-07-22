@@ -3,11 +3,13 @@
 usuarios = ['maria', 'paulo', 'silvia', 'joao', 'ciro', 'jose', 'admin']
 
 ### ESCREVER UMA SAUDAÇÃO PARA CADA USUÁRIO APÓS LOGIN
-
-
-### SE O USUÁRIO FOR admin 
 print('-'*50)
-login = 'joao'
+for usuario in usuarios:
+    print('\nSenhor(a)' )
+
+### SE O USUÁRIO FOR admin EXIBA MENSAGEM ESPECIAL
+print('-'*50)
+login = 'admin'
 
 for usuario in usuarios:
     if login.lower() in usuario:
