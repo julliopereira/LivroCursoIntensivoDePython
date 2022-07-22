@@ -9,5 +9,4 @@ if 'laranja' in frutas:
 if 'cereja' in frutas: 
     print('A fruta "cereja" está na lista \n')
 
-# TESTANDO GIT
-# MARIA
+
