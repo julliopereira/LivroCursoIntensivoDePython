@@ -1,6 +1,6 @@
 ### CRIAR UMA LISTA admin COM 5 USUARIOS
 
-usuarios = ['maria', 'paulo', 'silvia', 'joao', 'ciro', 'jose', 'admin']
+usuarios = ['maria', 'paulo', 'silvia', , 'admin','joao', 'ciro', 'jose']
 
 ### ESCREVER UMA SAUDAÇÃO PARA CADA USUÁRIO APÓS LOGIN
 print('-'*50)
@@ -19,4 +19,4 @@ for usuario in usuarios:
 
 
 ### ACON
-print('-'*50)
+#print('-'*50)
