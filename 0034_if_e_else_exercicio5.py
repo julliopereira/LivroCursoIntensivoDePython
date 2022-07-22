@@ -18,5 +18,6 @@ for usuario in usuarios:
         print('\nSenhor(a) "' + str(usuario).title() + '" loggin realizado! \n')
 
 
-### ACON
+### VERIFICAR SE A LISTA TEM NOME DE USUARIO IGUAL
+### CRIE UMA LISTA CHAMADA current_users 
 print('-'*50)
