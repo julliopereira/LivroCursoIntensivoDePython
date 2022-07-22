@@ -19,8 +19,8 @@ print(alien_0['cor'] + '\n')                # SOLICITANDO VALOR DE UM DICIONÁRI
 ### EXEMPLO 2 - SOLICITANDO O VALOR DA CHAVE 'pontos' SE UTILIZANDO DE VARIAVEL:
 print('-'*50)
 
-alien = alien_0['pontos']                   # ATRIBUINDO O VALOR DA CHAVE 'pontos' 
+alien = alien_0['pontos']                   # ATRIBUINDO O VALOR DA CHAVE 'pontos' NA VARIAVEL alien
 
-print(alien + '\n')                         # 
+print(str(alien) + '\n')                         # MOSTRANDO O VALOR DA VARIÁVEL
 
 
