@@ -4,7 +4,7 @@
 
 ingredientes = []
 
-if ingrediente:
+if ingredientes:
     for ingrediente in ingredientes:
         print('Adicionando ' + ingrediente + '.\n')
     print('\nFinalizado, fazendo a pizza')
@@ -13,6 +13,9 @@ else:
 
 
 del ingrediente
+
+
+
 ### AGORA EXCREVER CÓDIGA PARA POPULAR A LISTA
 print('-'*50)
 
