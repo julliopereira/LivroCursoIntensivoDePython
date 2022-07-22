@@ -12,9 +12,10 @@ usuarios = {
     'sobrenome': 'pontes',
     }
 
-for k, v in usuarios.items():
-    print(str(k) + ':' + str(v))
+for k, v in usuarios.items():               # ATRIBUI ÀS VARIÁVEIS k e v OS VALORES PARES DO DICICIONARIO 
+    print(str(k) + ':' + str(v))            # MOSTRA O VALOR key e values
 print('\n')
 
 ### 
 print('-'*50)
+
