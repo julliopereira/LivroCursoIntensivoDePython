@@ -21,6 +21,6 @@ print('-'*50)
 
 alien = alien_0['pontos']                   # ATRIBUINDO O VALOR DA CHAVE 'pontos' NA VARIAVEL alien
 
-print(str(alien) + '\n')                         # MOSTRANDO O VALOR DA VARIÁVEL
+print(str(alien) + '\n')                    # MOSTRANDO O VALOR DA VARIÁVEL
 
 
