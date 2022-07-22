@@ -3,4 +3,7 @@
 admin = ['maria', 'paulo', 'silvia', 'joao', 'ciro', 'jose']
 
 ### ESCREVER UMA SAUDAÇÃO PARA CADA USUÁRIO APÓS LOGIN
+login = 'joao'
 
+for a in admin:
+    if 
