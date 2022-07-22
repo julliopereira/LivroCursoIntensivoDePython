@@ -17,3 +17,6 @@ for usuario in usuarios:
     else:
         print('\nSenhor(a) "' + str(usuario).title() + '" loggin realizado! \n')
 
+
+### ACON
+print('-'*50)
