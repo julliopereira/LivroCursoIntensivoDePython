@@ -12,4 +12,6 @@ valor.
 print('-'*50)
 
 alien_0 = {'cor': 'verde', 'pontos': 5}     # DICIONARIO COM 2 PARES { 'chave:valor', 'chave:valor'} 
-print(alien_0['cor'] + '\n')
+print(alien_0['cor'] + '\n')                # SOLICITANDO VALOR DE UM DICIONÁRIO
+
+
