@@ -24,5 +24,5 @@ del usuarios
 print('-'*50)
 
 current_users = ['maria', 'paulo', 'silvia', 'admin', 'joao', 'ciro', 'jose']
+new_users =  ['selma', 'samanta', 'sara', 'silvio', 'joao', 'paulo']
 
-new_users =  ['selma', 'samanta', 'sara', 'silvio', '']
