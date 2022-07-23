@@ -20,4 +20,13 @@ print(min(digitos))                         # min       - Mostra o menor numero 
 print(max(digitos))                         # max       - Mostra o maior numero da lista
 print(sum(digitos))                         # sum       - A soma de todos os dígitos
 
+### DICIONARIO
+linguagens_favoritas = {
+    'joao': 'python',
+    'sara': 'c',
+    'eduardo': 'ruby',
+    'phil': 'python',
+    }
 
+print(set(linguagens_favoritas.values()))          # set       - Também chamado de conjunto set, torna os valores únicos (python não vai se repetir quando mostrado)
+        

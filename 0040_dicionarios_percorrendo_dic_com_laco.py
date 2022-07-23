@@ -50,8 +50,9 @@ print('\n')
 
 
 ### NO EXEMPLO ACIMA, BUSCAMOS OS VALORES APENAS COM values() MAS O VALOR python SE REPEDIU
-### PARA QUE OS VALOR NÃO SE REPITAM USAMOS O CONJUNTO set() QUE SIMPLESMENTE VAI TORNAR O VALOR ÚNICO
+### PARA QUE OS VALOR NÃO SE REPITAM USAMOS O - CONJUNTO set() - QUE SIMPLESMENTE VAI TORNAR O VALOR ÚNICO
+print('-'*50)
 
-for nome in set(linguagens_favoritas.values()):             # USANDO O CON
+for nome in set(linguagens_favoritas.values()):             # USANDO O CONJUNTO set()
     print('O nome é: ' + str(nome).title())                 # MOSTRA O VALOR values 
 print('\n')
