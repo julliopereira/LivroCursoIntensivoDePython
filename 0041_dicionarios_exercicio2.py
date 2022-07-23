@@ -23,7 +23,7 @@ for key, value in esportes.items():
 print('-'*50)
 
 print('VEJA QUE O TIPO DE ESPORTE NÃO SE REPETE: \n')
-for value in set(esportes.values()):
+for value in sorted(set(esportes.values())):       # sorted (em ordem) set (unificar) values (mostra apenas do campo values)
     print(value)
 
 
