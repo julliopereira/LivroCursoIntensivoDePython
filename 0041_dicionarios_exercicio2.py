@@ -1,6 +1,19 @@
-### PARA TRABALHAR COM O VALOR keys É NECESSÁRIO UTILIZAR O MÉTODO keys()
+### UM LAÇO QUE PERCORRE AS CHAVES E AS EXIBE
 print('-'*50)
 
-descrição = {
-
+esportes = {
+    'fabio': 'futebol',
+    'pedro': 'futebol',
+    'silvia': 'voley',
+    'eduardo': 'basquete',
+    'marcio': 'handbol',
+    'sara': 'voley',
+    'clebio': 'golf',
+    'maria': 'bike',
+    'felipe': 'tiro',
+    'bruno': 'tiro',
+    'lucas': 'arco',
     }
+
+for item in esportes.items():
+    print(item)
