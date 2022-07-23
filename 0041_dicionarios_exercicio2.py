@@ -15,5 +15,5 @@ esportes = {
     'lucas': 'arco',
     }
 
-for item in esportes.items():
-    print(item)
+for key, value in esportes.items():
+    print(key + ':' +  value)
