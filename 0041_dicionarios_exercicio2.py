@@ -17,3 +17,11 @@ esportes = {
 
 for key, value in esportes.items():
     print(key + ':' +  value)
+
+#### CRIE UM DICIONÁRIO QUE CONTRANHA O NOME DE TRÊS RIOS IMPORTANTES E O PAÍS QUE O RIO CORTA
+
+rios = {
+    'nilo': 'egito',
+    'mazonas': 'brasil',
+    'jordão': 'israel',
+    }
