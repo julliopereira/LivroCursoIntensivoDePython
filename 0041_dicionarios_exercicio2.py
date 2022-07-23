@@ -20,8 +20,11 @@ for key, value in esportes.items():
 
 
 ### MOSTRE APENAS OS NOMES DE TODOS OS PARTICIPANTES SEM REPETÍ-LOS SE HOUVER DUPLICIDADE
+print('-'*50)
 
- 
+print('VEJA QUE O TIPO DE ESPORTE NÃO SE REPETE: \n')
+for value in set(esportes.values()):
+    print(value)
 
 
 ### CRIE UM DICIONÁRIO QUE CONTRANHA O NOME DE TRÊS RIOS IMPORTANTES E O PAÍS QUE O RIO CORTA
