@@ -3,6 +3,7 @@
 '''
 É importante entender que para puxar o valor de key e valores
 deve-se utilizar o MÉTODO items() que engloba keys() e values() no laço.
+
 E para puxar o valor de key é necessário utilizar o MÉTODO keys() e 
 para puxar o valor de values é necessário utilizar values().
 '''
