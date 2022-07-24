@@ -19,3 +19,6 @@ lista = (pessoa_1, pessoa_2, pessoa_3)
 for pessoa in lista:
     print(pessoa)
 
+print('-'*50) #---------------------------------------------------------------------------------------
+
+# AQUI VAMOS 
