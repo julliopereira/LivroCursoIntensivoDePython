@@ -17,5 +17,3 @@ for pessoa in pessoas[:5]:                           # Vai mostrar as 5 primeira
 print('-'*50) #---------------------------------------------------------------------------------------
 
 print('Todal de pessoas: ' + str(len(pessoas)))      # Mostra a quantidade de pessoas
-
-print(pessoas)
