@@ -22,3 +22,11 @@ for pessoa in lista:
 print('-'*50) #---------------------------------------------------------------------------------------
 
 # AQUI VAMOS AGORA MONTAR ALGO PARECIDO PORÉM COM 30 PESSOAS
+
+pessoas = []                                         #LISTA VAZIA
+
+for pessoa in range(30):
+    nova_pessoa = {'cor': 'japones', 'pontos': 5, 'velocidade': ''}
+
+
+
