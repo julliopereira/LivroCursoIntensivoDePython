@@ -12,8 +12,12 @@ for pessoa in range(30):                             # O range() gera 30 ocorren
 
 for pessoa in pessoas[:3]:                           # Vai mostrar as 5 primeiras ocorrências da lista
     if pessoa['nacionalidade'] == 'japones':
-
-
+        pessoa['nacionalidade'] = 'ingles'
+        pessoa['pontos'] = 10
+        pessoa['velocidade'] = 'fast'
+ 
+for pessoa in pessoas[:5]:                           # Mostrar as 5 primeiras ocorrencias (verificar que as 3 primeiras foram alteradas)
+    print(pessoa)       
 
 print('-'*50) #---------------------------------------------------------------------------------------
 
