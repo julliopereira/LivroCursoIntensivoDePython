@@ -21,4 +21,4 @@ for pessoa in lista:
 
 print('-'*50) #---------------------------------------------------------------------------------------
 
-# AQUI VAMOS 
+# AQUI VAMOS AGORA MONTAR ALGO PARECIDO PORÉM COM 30 PESSOAS
