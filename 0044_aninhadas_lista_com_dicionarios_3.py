@@ -1,4 +1,4 @@
-# VAMOS ALTERAR A nacionalidade de
+# VAMOS ALTERAR A nacionalidade PARA ingles MUDAR OS PONTOS PARA 10 E A VELOCIDADE PARA fast
 
 pessoas = []                                         # LISTA VAZIA
 
@@ -10,8 +10,9 @@ for pessoa in range(30):                             # O range() gera 30 ocorren
         }
     pessoas.append(nova_pessoa)                      # Então adicionamos à lista pessoas exatamente o dissionário criado 
 
-for pessoa in pessoas[:5]:                           # Vai mostrar as 5 primeiras ocorrências da lista
-    print(pessoa)
+for pessoa in pessoas[:3]:                           # Vai mostrar as 5 primeiras ocorrências da lista
+    if pessoa['nacionalidade'] == 'japones':
+
 
 
 print('-'*50) #---------------------------------------------------------------------------------------
