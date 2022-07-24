@@ -1,4 +1,4 @@
-# AQUI VAMOS AGORA MONTAR ALGO PARECIDO PORÉM COM 30 PESSOAS
+# VAMOS ALTERAR A nacionalidade de
 
 pessoas = []                                         # LISTA VAZIA
 
