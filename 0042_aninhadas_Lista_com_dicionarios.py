@@ -23,10 +23,18 @@ print('-'*50) #-----------------------------------------------------------------
 
 # AQUI VAMOS AGORA MONTAR ALGO PARECIDO PORÉM COM 30 PESSOAS
 
-pessoas = []                                         #LISTA VAZIA
+pessoas = []                                         # LISTA VAZIA
 
-for pessoa in range(30):
-    nova_pessoa = {'cor': 'japones', 'pontos': 5, 'velocidade': ''}
+for pessoa in range(30):                             # O range() gera 30 ocorrencias 
+    nova_pessoa = {                                  # Então é criado um dissionário com 3 x chaves-valores
+        'cor': 'japones', 
+        'pontos': 5, 
+        'velocidade': 'slow',
+        }
+    pessoas.append(nova_pessoa)                      # Então adicionamos à lista pessoas exatamente o dissionário criado 
+
+for pessoa in pessoas[:5]:
+    print(pessoa)
 
 
 
