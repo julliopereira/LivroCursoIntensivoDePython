@@ -22,3 +22,4 @@ for pessoa in pessoas[:5]:                           # Mostrar as 5 primeiras oc
 print('-'*50) #---------------------------------------------------------------------------------------
 
 print('Todal de pessoas: ' + str(len(pessoas)))      # Mostra a quantidade de pessoas
+
