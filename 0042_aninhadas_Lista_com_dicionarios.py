@@ -33,8 +33,10 @@ for pessoa in range(30):                             # O range() gera 30 ocorren
         }
     pessoas.append(nova_pessoa)                      # Então adicionamos à lista pessoas exatamente o dissionário criado 
 
-for pessoa in pessoas[:5]:
+for pessoa in pessoas[:5]:                           # Vai mostrar as 5 primeiras ocorrências da lista
     print(pessoa)
 
 
+print('-'*50) #---------------------------------------------------------------------------------------
 
+print('Todal de pessoas: ' + str(len(pessoas)))      # Mostra a quantidade de pessoas
