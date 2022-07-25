@@ -1,0 +1,19 @@
+pessoas = []
+
+mario = { 
+    'sobrenome': 'ayala',
+    'altura': '1.80',
+    'peso': '80',
+    'civil': 'solteiro',
+    'esporte': 'futebol',
+    'trabalho': 'engenheiro',
+}
+
+maria = { 
+    'sobrenome': 'mendes',
+    'altura': '1.65',
+    'peso': '60',
+    'civil': 'solteira',
+    'esporte': 'voley',
+    'trabalho': 'tecnico',
+}
