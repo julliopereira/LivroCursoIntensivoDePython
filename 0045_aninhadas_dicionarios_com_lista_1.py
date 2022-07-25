@@ -8,4 +8,7 @@ linguagens_favoritas = {
     }
 
 for nome, linguagem in linguagens_favoritas.items():
-    print(nome,':',linguagem)
+    if len(linguagem) > 1:
+        print(nome,':',linguagem)
+    elif len(linguagem) == 1
+    
