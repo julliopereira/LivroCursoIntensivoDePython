@@ -1,5 +1,3 @@
-pessoas = []
-
 mario = { 
     'sobrenome': 'ayala',
     'altura': '1.80',
@@ -17,5 +15,17 @@ maria = {
     'esporte': 'voley',
     'trabalho': 'tecnica',
     }
+
+julio = { 
+    'sobrenome': 'pereira',
+    'altura': '1.84',
+    'peso': '90',
+    'civil': 'solteiro',
+    'esporte': 'futebol',
+    'trabalho': 'Adm de rede',
+    }
+
+pessoas = [mario,maria,julio]
+
 
 
