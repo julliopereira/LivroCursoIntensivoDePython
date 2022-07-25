@@ -7,7 +7,7 @@ mario = {
     'civil': 'solteiro',
     'esporte': 'futebol',
     'trabalho': 'engenheiro',
-}
+    }
 
 maria = { 
     'sobrenome': 'mendes',
@@ -15,5 +15,7 @@ maria = {
     'peso': '60',
     'civil': 'solteira',
     'esporte': 'voley',
-    'trabalho': 'tecnico',
-}
+    'trabalho': 'tecnica',
+    }
+
+
