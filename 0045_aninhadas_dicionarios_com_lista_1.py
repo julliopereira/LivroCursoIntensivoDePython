@@ -7,5 +7,5 @@ linguagens_favoritas = {
     'jorge': ['python'],
     }
 
-for linguagem in linguagens_favoritas.items():
-    print(str(linguagem(['joao'])))
+for nome, linguagem in linguagens_favoritas.items():
+    print(nome,':',linguagem)
