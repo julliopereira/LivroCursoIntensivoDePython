@@ -30,7 +30,8 @@ julio = {
 
 pessoas = [mario,maria,julio]
 for pessoa in pessoas:
+    print('As informaç' + pessoa['nome'] + ':')
     for k, v in pessoa.items():
-        print('\t' + str(k('nome')))
+        print('\t' + k + ':' + v)
 
 
