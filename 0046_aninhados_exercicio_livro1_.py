@@ -41,7 +41,8 @@ pessoas = {
 
 for keys, nome_info in pessoas.items():
     print('\nO seu nome é :' + keys)
-    nome_sobrenome = keys['nome'] + ' ' + nome_info['sobrenome']
-    pesoo = nome_info['peso']
+    nome_sobrenome = keys['nome'] #+ " " + nome_info['sobrenome']
+    massa = nome_info['peso']
 
-    print()
+    print('\t' + nome_sobrenome.title())
+    print('\t' + massa.title())
