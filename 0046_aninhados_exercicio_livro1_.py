@@ -8,7 +8,7 @@
 
 
 pessoas = { 
-    'mario' : { 
+    'username_mario' : { 
         'nome': 'mario',
         'sobrenome': 'ayala',
         'altura': '1.80',
@@ -18,7 +18,7 @@ pessoas = {
         'trabalho': 'engenheiro',
         },
 
-    'maria' : { 
+    'username_maria' : { 
         'nome': 'maria',
         'sobrenome': 'mendes',
         'altura': '1.65',
@@ -28,7 +28,7 @@ pessoas = {
         'trabalho': 'tecnica',
         },
 
-    'julio' : { 
+    'username_julio' : { 
         'nome': 'julio',
         'sobrenome': 'pereira',
         'altura': '1.84',
@@ -38,11 +38,14 @@ pessoas = {
         'trabalho': 'Adm de rede',
         },
     }
-#+ " " + nome_info['sobrenome']
-for username, nome_info in pessoas.items():
-    print('\nO seu nome é :' + username)
-    nome_sobrenome = nome_info['nome'] + " " + nome_info['sobrenome']
-    massa = nome_info['peso']
 
-    print('\t' + nome_sobrenome.title())
-    print('\t' + massa.title())
+dicionarios = [pessoas]
+
+for dicionario in dicionarios:
+    for username, nome_info in pessoas.items():  # username = nome dos dicionarios internos| nome_info = valores dentro de cada dissionario 
+        print('\nO seu username é: ' + username)
+        nome_sobrenome = nome_info['nome'] + " " + nome_info['sobrenome']
+        massa = nome_info['peso']
+
+        print('\t' + nome_sobrenome.title())
+        print('\t' + massa.title())
