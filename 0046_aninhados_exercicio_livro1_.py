@@ -4,7 +4,7 @@
 # ARMAZENE OS TRES DICIONARIOS EM UMA LISTA CHAMADA people. PERCORRA SUA LISTA DE PESSOAS COM UM LAÇO.
 # A MEDIDA QUE PERCORRER A LISTA APRESENTE TUDO QUE VOCÊ SABE SOBRE CADA PESSOA
 
-from typing import KeysView
+
 
 
 pessoas = { 
@@ -38,10 +38,10 @@ pessoas = {
         'trabalho': 'Adm de rede',
         },
     }
-
-for keys, nome_info in pessoas.items():
-    print('\nO seu nome é :' + keys)
-    nome_sobrenome = keys['nome'] #+ " " + nome_info['sobrenome']
+#+ " " + nome_info['sobrenome']
+for username, nome_info in pessoas.items():
+    print('\nO seu nome é :' + username)
+    nome_sobrenome = nome_info['nome'] + " " + nome_info['sobrenome']
     massa = nome_info['peso']
 
     print('\t' + nome_sobrenome.title())
