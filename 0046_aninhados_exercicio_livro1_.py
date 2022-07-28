@@ -5,7 +5,7 @@
 # A MEDIDA QUE PERCORRER A LISTA APRESENTE TUDO QUE VOCÊ SABE SOBRE CADA PESSOA
 
 pessoas = { 
-    'mario' = { 
+    'mario' : { 
         'nome': 'mario',
         'sobrenome': 'ayala',
         'altura': '1.80',
@@ -13,9 +13,9 @@ pessoas = {
         'civil': 'solteiro',
         'esporte': 'futebol',
         'trabalho': 'engenheiro',
-        }
+        },
 
-    'maria' = { 
+    'maria' : { 
         'nome': 'maria',
         'sobrenome': 'mendes',
         'altura': '1.65',
@@ -23,9 +23,9 @@ pessoas = {
         'civil': 'solteira',
         'esporte': 'voley',
         'trabalho': 'tecnica',
-        }
+        },
 
-    'julio' = { 
+    'julio' : { 
         'nome': 'julio',
         'sobrenome': 'pereira',
         'altura': '1.84',
@@ -33,5 +33,9 @@ pessoas = {
         'civil': 'solteiro',
         'esporte': 'futebol',
         'trabalho': 'Adm de rede',
-        }
+        },
     }
+
+for nome, nome_info in pessoas.items():
+    print('\nO seu nome de usuário é :' + nome)
+    print('\n')
