@@ -4,5 +4,22 @@
 ### PERCORRER LISTA COM LAÇO MOSTRANDO INFORMAÇÕES
 
 cachorro = {
-        
-}
+        'tipo': 'mamifero',
+        'dono': 'mario',
+    }
+
+cavalo = {
+        'tipo': 'equino',
+        'dono': 'pedro',
+    }
+
+cobra = {
+        'tipo': 'reptil',
+        'dono': 'lara',
+    }
+
+pets = [cachorro,cavalo,cobra]
+
+for pet in pets:
+    for key, value in pet.items():
+        print(key['tipo'] + value['dono'])
