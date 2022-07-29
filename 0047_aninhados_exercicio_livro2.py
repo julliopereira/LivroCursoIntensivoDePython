@@ -18,8 +18,9 @@ cobra = {
         'dono': 'lara',
     }
 
-pets = [cachorro,cavalo,cobra]
+pets = [cachorro, cavalo, cobra]
 
 for pet in pets:
     for key, value in pet.items():
-        print(key['tipo'] + value['dono'])
+        print(key + ':' + value + '\n')
+
