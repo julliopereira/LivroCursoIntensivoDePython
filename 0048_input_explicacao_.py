@@ -8,7 +8,7 @@ print(type(variavel))
 print('-'*50)
 
 variavel1 = int(input('Digite variavel 1: '))           # UMA FORMA DE UTILIZAR É ASSOCIAR A VARIVEL NA ENTRADA
-print(type(variavel1))                                  # FUNÇÃO type() MOSTRA O TIPO 
+print(type(variavel1))                                  # FUNÇÃO type() MOSTRA O TIPO DA VARIAVEL str ou int ou float etc...
 
 variavel2 = input('Digite variavel2: ')                 
 print(int(variavel2))                                   # OUTRA FORMA É ALTERAR NA SAÍDA
