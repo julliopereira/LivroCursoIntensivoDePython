@@ -52,4 +52,9 @@ while True:                                        # O true FAZ UM LAÇO ETERNO 
 
 
 print("-"*50) #---------------------------------------------------------------------
-#### DEIXANDO O USUARIO SAIR QUANDO QUISER
+####  USANDO A FUNÇÃO continue PARA RETORNAR AO INICIO DO LOOP
+
+valor = 0
+
+while valor <= 10:                                        
+    contador = 
