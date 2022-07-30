@@ -33,13 +33,20 @@ print("-"*50) #-----------------------------------------------------------------
 
 bandeira = True
 
-while bandeira:                                        # SE O CANTADOR MENOR OU IGUAL A CINCO FAÇA O QUE ESTÁ DENTRO DE while
+while bandeira:                                        
     texto = input('Digite qualquer coisa ou quit para sair: ')
     if texto == 'quit':
         bandeira = False
 
 print("-"*50) #---------------------------------------------------------------------
-#### DEIXANDO O USUARIO SAIR QUANDO QUISER
+#### USANDO A INSTRUÇÃO break PARA PARAR O LAÇO ONDE ESTIVER
+
+
+
+while True:                                        # O true FAZ UM LAÇO ETERNO ATÉ QUE O break SEJA EXECUTADO
+    texto = input('Digite qualquer coisa ou quit para sair: ')
+    if texto == 'quit':
+        break
 
 print("-"*50) #---------------------------------------------------------------------
 #### DEIXANDO O USUARIO SAIR QUANDO QUISER
