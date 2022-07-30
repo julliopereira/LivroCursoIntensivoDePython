@@ -56,9 +56,9 @@ print("-"*50) #-----------------------------------------------------------------
 
 num = 0
 
-while num<= 10:  
-    if num% 2 == 0:
+while num < 10:  
+    num += 1
+    if num % 2 == 0:                            # SE O RESTO DA DIVISAO DE Num POR 2 FOR IGUAL A ZERO 
         continue
-    else:
-        print('o número ' + str(num) + '') 
-        num+= 1
+    
+    print('o número ' + str(num) + ' é ímpar') 
