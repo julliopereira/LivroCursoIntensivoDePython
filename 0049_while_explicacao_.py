@@ -31,11 +31,12 @@ while mensagem != 'quit':
 print("-"*50) #---------------------------------------------------------------------
 #### USANDO UMA flag QUE É UMA VARIAVEL QUE DEVE SER ALTERADA SE QUISER SAIR DO while
 
-contador = 1
+bandeira = True
 
-while contador <= 5:                                        # SE O CANTADOR MENOR OU IGUAL A CINCO FAÇA O QUE ESTÁ DENTRO DE while
-    print('contador: ' + str(contador) + ' menor que 6')
-    contador += 1
+while bandeira:                                        # SE O CANTADOR MENOR OU IGUAL A CINCO FAÇA O QUE ESTÁ DENTRO DE while
+    texto = input('Digite qualquer coisa ou quit para sair: ')
+    if texto == 'quit':
+        bandeira = False
 
 print("-"*50) #---------------------------------------------------------------------
 #### DEIXANDO O USUARIO SAIR QUANDO QUISER
