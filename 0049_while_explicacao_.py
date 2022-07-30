@@ -20,10 +20,22 @@ while mensagem != 'quit':
     print(mensagem)
 
 print("-"*50) #---------------------------------------------------------------------
-#### DEIXANDO O USUARIO SAIR QUANDO QUISER
+#### PARA NÁO MOSTRAR O QUIT NO FINAL USAR UM if SIMPLES
+
+mensagem = ''
+while mensagem != 'quit':
+    mensagem = input('Digite mensagem: ')
+    if mensagem != 'quit':
+        print(mensagem)
 
 print("-"*50) #---------------------------------------------------------------------
-#### DEIXANDO O USUARIO SAIR QUANDO QUISER
+#### USANDO UMA flag QUE É UMA VARIAVEL QUE DEVE SER ALTERADA SE QUISER SAIR DO while
+
+contador = 1
+
+while contador <= 5:                                        # SE O CANTADOR MENOR OU IGUAL A CINCO FAÇA O QUE ESTÁ DENTRO DE while
+    print('contador: ' + str(contador) + ' menor que 6')
+    contador += 1
 
 print("-"*50) #---------------------------------------------------------------------
 #### DEIXANDO O USUARIO SAIR QUANDO QUISER
