@@ -44,7 +44,7 @@ print("-"*50) #-----------------------------------------------------------------
 
 
 while True:                                        # O true FAZ UM LAÇO ETERNO ATÉ QUE O break SEJA EXECUTADO
-    texto = input('Digite qualquer coisa ou quit para sair: ')
+    texto = input('Digite qualquer coisa ou quit para sair2: ')
     if texto == 'quit':
         break
 
