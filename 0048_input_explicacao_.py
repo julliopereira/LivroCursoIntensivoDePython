@@ -12,5 +12,3 @@ print(type(variavel1))                                  # FUNÇÃO type() MOSTRA
 
 variavel2 = input('Digite variavel2: ')                 
 print(int(variavel2))                                   # OUTRA FORMA É ALTERAR NA SAÍDA
-
-

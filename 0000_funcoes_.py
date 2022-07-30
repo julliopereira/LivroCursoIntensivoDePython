@@ -1,10 +1,7 @@
 ### FUNÇÕES
 
 
-
-
-
-## VARIADO
+## VARIADAS
 
 dez = range(2, 10)                          # range     - GRAVE NA VARIAVEL 'dez' OS VALORES DE 2 A 10
 print(dez)
@@ -12,6 +9,7 @@ print(dez)
 inp = input('Digite um valor: ')            # input     - SOLICITA UMA ENTRADA DO USUARIO
 inp = int(input('Digite um numero: '))      # int       - O VALOR DIGITADO DEVE SER UM NUMERO INTEIRO
 inp = float(input('Digite numero: '))       # float     - O VALOR DIGITADO SERÁ UM NUMERO COM NUMERO FLUTUANTE 
+print(type(inp))                            # type      - MOSTRA O TYPE DE VALOR DE UMA VARIAVEL tring inteiro float etc...
 
 ## LISTA 
 
@@ -35,6 +33,6 @@ linguagens_favoritas = {
     'eduardo': 'ruby',
     'phil': 'python',
     }
-
+print()
 print(set(linguagens_favoritas.values()))          # set       - Também chamado de conjunto set, torna os valores únicos (python não vai se repetir quando mostrado)
-        
+
