@@ -54,7 +54,11 @@ while True:                                        # O true FAZ UM LAÇO ETERNO 
 print("-"*50) #---------------------------------------------------------------------
 ####  USANDO A FUNÇÃO continue PARA RETORNAR AO INICIO DO LOOP
 
-valor = 0
+num = 0
 
-while valor <= 10:                                        
-    contador = 
+while num<= 10:  
+    if num% 2 == 0:
+        continue
+    else:
+        print('o número ' + str(num) + '') 
+        num+= 1
