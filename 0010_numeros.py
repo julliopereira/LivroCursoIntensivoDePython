@@ -42,3 +42,7 @@ print('0.2 + 0.1:\t', 0.2 + 0.1)        # SERÁ APRESENTANDO COMO REDUZIR MAIS A
 print('3 * 0.1:\t', 3 * 0.1)            # SERÁ APRESENTANDO COMO REDUZIR MAIS A FRENTE
 
 
+print('-'*50)
+### MODULO % REALIZA OPERACÃO DE DIVISÃO E RETORNA O RESTO:
+
+print('5 % 3:\t', 5 % 3)
