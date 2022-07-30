@@ -12,3 +12,6 @@ print(type(variavel1))                                  # FUNÇÃO type() MOSTRA
 
 variavel2 = input('Digite variavel2: ')                 
 print(int(variavel2))                                   # OUTRA FORMA É ALTERAR NA SAÍDA
+
+if variavel >= 0:                                      # COMO ESTÁ COMPARANDO NUMEROS E O VALOR DE variavel É STRING VAMOS TER UM ERRO DE TYPEERR7
+    print(variavel)                                     # PARA ARRUMAR ISSO VÁ EM IF E ALTERE PARA int(variavel) >= 10
