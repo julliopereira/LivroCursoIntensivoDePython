@@ -47,6 +47,9 @@ while True:                                        # O true FAZ UM LAÇO ETERNO 
     texto = input('Digite qualquer coisa ou quit para sair2: ')
     if texto == 'quit':
         break
+    else:   
+        print(texto)
+
 
 print("-"*50) #---------------------------------------------------------------------
 #### DEIXANDO O USUARIO SAIR QUANDO QUISER
