@@ -22,6 +22,6 @@ pets = [cachorro, cavalo, cobra]
 
 for pet in pets:
     for key, value in pet.items():
-        print(key + ':' + value + '\n')
-        
+        print(key + ':\n\t' + value + '\n')
+
 
