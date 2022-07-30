@@ -33,6 +33,9 @@ linguagens_favoritas = {
     'eduardo': 'ruby',
     'phil': 'python',
     }
-print()
+
+print(linguagens_favoritas.items())                # items     - Mostra todos os itens de um dicionário
+print(linguagens_favoritas.keys())                 # keys      - Mostra somente o campo keys (lado esquerdo) 
+print(linguagens_favoritas.values())               # values    - Mostra somente o campo values (lado esquerdo)
 print(set(linguagens_favoritas.values()))          # set       - Também chamado de conjunto set, torna os valores únicos (python não vai se repetir quando mostrado)
 
