@@ -10,7 +10,14 @@ while contador <= 5:                                        # SE O CANTADOR MENO
 print("-"*50) #---------------------------------------------------------------------
 #### USURIO VAI DIGITAR VÁRIAS PALAVRAS A SEREM MOSTRADAS NA TELA, MAS SÓ VAI SAIR DO while QUANDO DIGITAR quit
 
-dig = input('Digite qualquer coisa para eu mostrar')
+dig = 'Digite qualquer coisa para eu mostrar'
+dig += '\tDigite "quit" para encerrar'
+
+mensagem = ''
+
+while mensagem != 'quit':
+    mensagem = input('Digite mensagem: ')
+    print(mensagem)
 
 print("-"*50) #---------------------------------------------------------------------
 #### DEIXANDO O USUARIO SAIR QUANDO QUISER
