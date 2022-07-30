@@ -1,5 +1,9 @@
 ### FUNÇÕES
 
+
+
+
+
 ## VARIADO
 
 dez = range(2, 10)                          # range     - GRAVE NA VARIAVEL 'dez' OS VALORES DE 2 A 10
@@ -30,3 +34,5 @@ linguagens_favoritas = {
 
 print(set(linguagens_favoritas.values()))          # set       - Também chamado de conjunto set, torna os valores únicos (python não vai se repetir quando mostrado)
         
+
+### 
