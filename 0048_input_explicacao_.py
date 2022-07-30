@@ -2,13 +2,13 @@
 ### UTILIZAMOS UMA VARIÁVEL PARA GUARDAR O VALOR DIGITADO PELO USUÁRIO
 
 variavel = input('Digite qualquer coisa: ')             # SOLICITA AO USUARIO UMA ENTRADA E GUARDA NA VARIAVEL variavel
-print(variavel)
+print(type(variavel))
 
 ### A FUNÇÃO input() COLETA O A ENTRADA DO USUARIO SEMPRE EM STRING srt() E PARA TRANSFORMAR EM NUMERO USAMOS int() 
 print('-'*50)
 
 variavel1 = int(input('Digite variavel 1: '))           # UMA FORMA DE UTILIZAR É ASSOCIAR A VARIVEL NA ENTRADA
-print(variavel1)
+print(type(variavel1))                                  # FUNÇÃO type() MOSTRA O TIPO 
 
 variavel2 = input('Digite variavel2: ')                 
 print(int(variavel2))                                   # OUTRA FORMA É ALTERAR NA SAÍDA
