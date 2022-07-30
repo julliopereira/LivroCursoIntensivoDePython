@@ -4,6 +4,7 @@
 variavel = input('Digite qualquer coisa: ')             # SOLICITA AO USUARIO UMA ENTRADA E GUARDA NA VARIAVEL variavel
 print(variavel)
 
-### A FUNÇÃO input() COLETA O VALOR int() 
+### A FUNÇÃO input() COLETA O A ENTRADA DO USUARIO SEMPRE EM STRING srt() E PARA TRANSFORMAR EM NUMERO USAMOS int() 
 print('-'*50)
+
 
