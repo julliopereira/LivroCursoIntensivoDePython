@@ -45,4 +45,12 @@ respostas = {}
 
 while True:
     nome = input('Qual o seu nome ?: ')
-    lugar = input('Que Local do mundo voc')
+    lugar = input('Que Local do mundo você gostaria de visitar? : ')
+    respostas[nome] = lugar
+    repetir = input('Gostaria de finalizar a pesquisa?[si/no]: ')
+    if repetir == 'no':
+        print('\tPesquisa finalizada')
+        break
+
+for nome, resposta in respostas.items():
+    print('O senhor ' + nome + '\n\t respondeu ' + resposta)
