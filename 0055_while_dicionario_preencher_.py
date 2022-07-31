@@ -1,7 +1,5 @@
 ### SOLICITA NOME DO PARTICIPANTE E UMA RESPOSTA ; USAR FLAG 
 
-from timeit import repeat
-
 
 responses = {}
 
@@ -16,5 +14,5 @@ while polling_active:                                                   # ENQUAN
         polling_active = False
 
 print('\n--- POOL RESULTS ---')
-for k, v in responses.items():
-    print(k + 'gostaria de escalar ' + v)
+for k, v in responses.items():                                          
+    print(k.title() + ' gostaria de escalar o ' + v.title())
