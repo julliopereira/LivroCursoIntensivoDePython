@@ -23,7 +23,7 @@ sandwich_orders = ['tomate', 'pastrami', 'pichles', 'pastrami', 'queijo prato', 
 finished_sandwiches = []
 
 print('\nA Loja está sem pastrami !!')
-while 'pastrami' in sandwich_orders:
+while 'pastrami' in sandwich_orders:                #Q ENQUANTO EXISTIR PASTRAMI NA LISTA USE O COMANDO ABAIXO PARA REMOVER DA LISTA
     sandwich_orders.remove('pastrami')
 
 print('\nPreparando os lanches: ')
@@ -36,3 +36,13 @@ print('\nSandwitchs finalizados: ')
 for sandwich in finished_sandwiches:
     print('\tSandwitch pronto: ' + sandwich.title())
 
+
+
+print('-'*50) #-----------------------------------------------------------------------------------
+### ENQUETE, QUE LUGAR DO MUNDO VOCÊ GOSTARIA DE VISITAR
+
+respostas = {}
+
+while True:
+    nome = input('Qual o seu nome ?: ')
+    lugar = input('Que Local do mundo voc')
