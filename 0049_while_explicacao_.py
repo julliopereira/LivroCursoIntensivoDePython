@@ -59,6 +59,6 @@ num = 0
 while num < 10:  
     num += 1
     if num % 2 == 0:                            # SE O RESTO DA DIVISAO DE Num POR 2 FOR IGUAL A ZERO 
-        continue                                
+        continue                                # RETORNE IMEDIATAMENTE PARA O COMEÇO DO WHILE
     
     print('o número ' + str(num) + ' é ímpar') 
