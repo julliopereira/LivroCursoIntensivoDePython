@@ -6,11 +6,13 @@ print('Digite sua idade para obter seu ingresso: \n')
 while True:
     idade = int(input('\t Digite a idade: '))
     if idade <= 3:
-        print('O ingresso é gratuito')
+        ingresso = 'gratuito'
         break
     elif idade <= 12:
-        print('O valor do ingresso é 10 dolares')
+        ingresso = '10 dolares'
         break
     else:
-        print('O valor do ingresso é 15 dolares')
+        ingresso = '15 dolares'
         break
+
+print('\t\tO valor do ingresso é ' + str(ingresso))
