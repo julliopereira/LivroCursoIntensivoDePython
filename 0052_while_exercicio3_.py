@@ -1,4 +1,4 @@
-### USAR TODOS OS TERMOS APRENDIDOS
+### USAR TUDO QUE FOI APRENDIDO
 
 ingr = ''
 
@@ -11,10 +11,11 @@ while ingr != 'quit':
         break
 
 while True:
-    pagar = input('Como deseja pagar ?')
-    if pagar != '':
-        continue
-    else:
+    cartao = input('Como deseja pagar ?')
+    if cartao != '':
         break
+    else:
+        continue
 
-print('Ótimo pedido, estamos preparando sua pizza...')
+print('\n\nÓtimo pedido, estamos preparando sua pizza...')
+print('Pagamento com cartao: ' + cartao)
