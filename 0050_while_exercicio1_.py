@@ -8,5 +8,7 @@ print('Digite os ingredientes para a pizza: \n')
 
 while ingr != 'quit':
     ingr = input('\tIngrediente: ')
-    if saida != 'quit':
-        print(saida)
+    if ingr == 'quit':
+        ingr
+
+print('Ótimo pedido, estamos preparando sua pizza...')
