@@ -1,2 +1,6 @@
 ### LANCHONETE  - CRIAR LISTA DE SANDWICHS E PREENCHER COM NOMES DE SANDWICHES
+### MOSTRAR O NOME A MEDIDA QUE FOREM PREPARADOS
+
+
+sandwich_orders = ['tomate', 'pichles', 'queijo prato', ]
 
