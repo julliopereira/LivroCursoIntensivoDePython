@@ -49,8 +49,8 @@ while True:
     respostas[nome] = lugar
     repetir = input('Gostaria de finalizar a pesquisa?[si/no]: ')
     if repetir == 'no':
-        print('\tPesquisa finalizada')
+        print('---Pesquisa finalizada---')
         break
 
 for nome, resposta in respostas.items():
-    print('O senhor ' + nome + '\n\t respondeu ' + resposta)
+    print('O senhor(a) ' + nome + '\n\t respondeu ' + resposta)
