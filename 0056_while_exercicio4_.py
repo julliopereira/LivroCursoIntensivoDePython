@@ -7,9 +7,11 @@ finished_sandwiches = []
 
 while sandwich_orders:
     sandwich = sandwich_orders.pop()
-    print('O sandwich ' + sandwich + 'foi preparado.')
+    print('O sandwich de ' + sandwich.title() + ' foi preparado.')
     finished_sandwiches.append(sandwich)
 
-for sandwich 
+print('\nSandwitchs finalizados: ')
+for sandwich in finished_sandwiches:
+    print('\tSandwitch pronto: ' + sandwich.title())
 
 
