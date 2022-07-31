@@ -22,6 +22,7 @@ print('-'*50) #-----------------------------------------------------------------
 sandwich_orders = ['tomate', 'pastrami', 'pichles', 'pastrami', 'queijo prato', 'alface', 'picanha', 'ovo', 'pastrami']
 finished_sandwiches = []
 
+print('\nA Loja está sem pastrami !!')
 while 'pastrami' in sandwich_orders:
     sandwich_orders.remove('pastrami')
 
