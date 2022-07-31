@@ -8,5 +8,6 @@ while unconfirmed_users:                                    # ENQUANTO EXISTIR U
     print('Verificando usuario: ' + current_user + '!.')
     confirmed_users.append(current_user)                    # ADICIONA O USUARIO NA LISTA confirmed_users
 
-for confirmed_user in confirmed_users:
-    print('O usuário ' + confirmed_user + )
+print('\nOs usuários confirmados são : ')                   
+for confirmed_user in confirmed_users:                      # PARA O USUARIO X NA LISTA Y 
+    print('Confirmado: ' + confirmed_user )                 # MOSTRA NOME DO USUARIO
