@@ -12,4 +12,5 @@ while polling_active:                                                   # ENQUAN
     response = input('você gostaria de escalar qual montanha? : ')
     responses[nome] = response                                          # ADICIONA A RESPOSTA (value) NA CHAVE (key) NOME
     repeat = input('\nVocê quer que outra pessoa responda? [si/no]')
-
+    if repeat == no:
+        polling_active = False
