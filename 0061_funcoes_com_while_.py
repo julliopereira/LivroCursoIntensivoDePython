@@ -5,6 +5,16 @@ def func_saudacao(nome, sobrenome):
     return var_full_name
 
 while True:
-    print('\nPor favor digite seu nome e sobrenome: ')
+    print('\nPor favor digite seu nome e sobrenome ou "q" para sair: ')
     var_nome = input('\n\tDigite seu nome: ')
+    if var_nome == 'q':
+        break
     var_sobrenome = input('\n\tDigite seu sobrenome: ') 
+
+    if var_sobrenome == 'q':
+        break
+
+    if var_nome or var_sobrenome != 'q':
+       var_nome_inteiro = func_saudacao(var_nome, var_sobrenome)
+       print('\n\n\t\tNome completo: ' + var_nome_inteiro)
+
