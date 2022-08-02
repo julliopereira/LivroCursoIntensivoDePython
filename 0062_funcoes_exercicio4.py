@@ -1,21 +1,30 @@
 ### ALBUM
 
-
-
+albuns = []
 
 def func_make_album(n_artista, n_album, n_faixas):
-    n_artista = {'artista':n_artista, 'album':n_album, 'faixas': n_faixas }
-    return n_artista
+    dic = {'artista':n_artista, 'album':n_album, 'faixas': n_faixas }
+    albuns.append(dic)
 
-def func_add_dados(n_artista, n_album, n_faixas)
+print('\n---- Realizando Pesquisa ----')
+while True:
+    artista = input('\nDigite artista: ')
+    if artista == 'q':
+        break
+    album = input('\nDigite Album: ')
+    if album == 'q':
+        break
+    faixas = input('\nNumero de faixas: ')
+    if faixas == 'q':
+        break
+    if artista or album or faixas == 'q':
+        break
 
-artista = input('Digite artista: ')
-album = input('Digite Album: ')
-faixas = input('Numero de faixas: ')
-
-albuns = func_make_album(artista, album, faixas)
+    dicionarios = func_make_album(artista, album, faixas)
 
 
-for k, v in albuns.items():
-    print('\n' + k + ':' + v)
+for album in albuns:
+    print('\n\t Album: ' + album)
+    for k, v in album.items():
+        print('\n\n\t' + k.title() + ':', v.title())
 
