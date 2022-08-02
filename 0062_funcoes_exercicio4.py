@@ -29,6 +29,3 @@ for album in albuns:
     for k, v in album.items():
         print('\t\t' + k.title() + ':', v.title())
 
-print(albuns)
-albuns.sort()
-print(albuns)
