@@ -6,8 +6,9 @@ def func_make_album(n_artista, n_album, n_faixas):
     dic = {'artista':n_artista, 'album':n_album, 'faixas': n_faixas }
     albuns.append(dic)
 
-print('\n---- Realizando Pesquisa ----')
+
 while True:
+    print('\n---- Realizando Pesquisa ----')
     artista = input('\nDigite artista: ')
     if artista == 'q':
         break
@@ -17,14 +18,17 @@ while True:
     faixas = input('\nNumero de faixas: ')
     if faixas == 'q':
         break
-    if artista or album or faixas == 'q':
-        break
 
-    dicionarios = func_make_album(artista, album, faixas)
+    func_make_album(artista, album, faixas)
 
+print(albuns)
 
 for album in albuns:
-    print('\n\t Album: ' + album)
+    print('-'*100)
+    print('\n\t Album: ')
     for k, v in album.items():
-        print('\n\n\t' + k.title() + ':', v.title())
+        print('\t\t' + k.title() + ':', v.title())
 
+print(albuns)
+albuns.sort()
+print(albuns)
