@@ -1,4 +1,4 @@
-### Impressora 3D
+# UTILIZANDO NOTAÇÃO DE FATIAMENTO [:] PARA COPIAR UMA LISTA NÃO ALTERANDO A ORIGINAL
 
 def print_models(unprinted_designs, completed_models):
     """Simula a impressão de cada design, até que não haja mais nenhum"""
@@ -16,5 +16,7 @@ def show_completed_models(completed_models):
 unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
 completed_models = []
 
-print_models(unprinted_designs,completed_models)
+print_models(unprinted_designs[:],completed_models)   ### UTILIZANDO FATIAMENTO DE unprinted_designs
 show_completed_models(completed_models)
+
+print(f'\nLISTA ORIGINAL {unprinted_designs}')
