@@ -9,9 +9,12 @@ def print_models(unprinted_designs, completed_models):
 
 def show_completed_models(completed_models):
     """Mostra todos os mmodelos impressos."""
-    print("\nO seguinte modelo tem sido impresso")
+    print("\nO seguinte modelo tem sido impresso:")
     for completed_model in completed_models:
         print(completed_model)
 
 unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
 completed_models = []
+
+print_models(unprinted_designs,completed_models)
+show_completed_models(completed_models)
