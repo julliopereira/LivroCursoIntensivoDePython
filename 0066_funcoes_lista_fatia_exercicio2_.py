@@ -17,5 +17,5 @@ def make_great(magicos):                                    # FUNCAO QUE ALTERA 
 make_great(magicos[:])                                      # [:] Faz uma cópia e não altera o original
 
 
-print('\n\n\nChamando lista após make_great alterar: \n')
+print('\n\nChamando lista após make_great alterar informacoes: \n')
 show_magicians(magicos)                                     # CHAMANDO FUNCAO
