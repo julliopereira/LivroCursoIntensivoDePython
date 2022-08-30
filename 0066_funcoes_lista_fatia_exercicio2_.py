@@ -7,8 +7,11 @@ def show_magicians(magicos):                                # CRIANDO FUNCAO
         print(magico)                                       # MOSTRANDO MAGICO
 
 def make_great(magicos):
+    c = 0
     for magico in magicos:
-        
+        nome = print(f'{magico} O Grande!')
+        magicos.insert(c, nome)
+        c =+ 1
 
 make_great(magicos)
 
