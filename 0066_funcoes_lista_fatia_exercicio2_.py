@@ -6,13 +6,16 @@ def show_magicians(magicos):                                # CRIANDO FUNCAO
     for magico in magicos:
         print(magico)                                       # MOSTRANDO MAGICO
 
-def make_great(magicos):
+def make_great(magicos):                                    # FUNCAO QUE ALTERA O VALOR DE CADA ENTRADA COM + O Grande no final
     c = 0
     for magico in magicos:
-        nome = print(f'{magico} O Grande!')
-        magicos.insert(c, nome)
-        c =+ 1
+        nome = magico + " O Grande!"
+        magicos[c] = nome
+        c += 1
+        print(magicos)
 
-make_great(magicos)
+make_great(magicos[:])                                      # [:] Faz uma cópia e não altera o original
 
+
+print('\n\n\nChamando lista após make_great alterar: \n')
 show_magicians(magicos)                                     # CHAMANDO FUNCAO
