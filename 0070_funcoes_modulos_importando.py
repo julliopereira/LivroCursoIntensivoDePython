@@ -5,9 +5,19 @@
 """
 PARA IMPORTAR:
 
-import nome_do_modulo
+import nome_do_modulo                  # DESSA FORMA PODEMOS ACESSAR COM: nome_do_modulo.nome_da_funcao()
 
 ou 
 
-from nome_do_modulo import nome_da_funcao
+from nome_do_modulo import nome_da_funcao       # DESSA FORMA PODEMOS ACESSAR COM:  nome_da_funcao()
+
+ou
+
+from nome_do_modulo import nome_da_funcao1, nome_da_funcao2, nome_da_funcao3   # IMPORTAR APENAS ALGUMAS FUNCOES
+
+
+ALIASES:
+
+import nome_do_modulo import nome_da_funcao as nf
+
 """
