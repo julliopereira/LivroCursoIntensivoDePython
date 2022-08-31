@@ -7,3 +7,4 @@ def sandwichs(*items):
     print(sandwich)
 
 sandwichs('tomate', 'queijo', 'alface', 'hamburguer', 'maionase', 'catchup', 'mostarda', 'picles')
+
