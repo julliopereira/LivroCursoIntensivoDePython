@@ -7,11 +7,11 @@ class Dog():
 
     def sit(self):
         """Simula um cachorro sentando"""
-        print(f'{self.name.title()} sente!')
+        print(f'{self.name.title()} sentar!')
 
     def roll_over(self):
         """Simula um cachorro rolando"""
-        print(f'{self.name.title()} rola!')
+        print(f'{self.name.title()} rolar!')
 
 cachorro = Dog('wille', 14)
 print(f'Meu cachorro é o {cachorro.name.title()} e tem a idade de {cachorro.age} anos.')
