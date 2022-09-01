@@ -14,4 +14,4 @@ class Dog():
         print(f'{self.name.title()} rola!')
 
 cachorro = Dog('wille', 14)
-print(f'{cachorro.name.title()}')
+print(f'Meu cachorro é o {cachorro.name.title()} e tem a idade de {cachorro.age} anos.')
