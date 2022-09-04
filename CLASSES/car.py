@@ -19,7 +19,10 @@ class Car:
 
     def kilometragem_atualizada(self, kilometragem):
         """Incrementa valor da kilometragem"""
-        self.odometro_lido += kilometragem
+        if kilometragem >= self.odometro_lido:
+            self.odometro_lido += kilometragem
+        else:
+            print(f'**Você não pode voltar a kilometragem')
 
 meu_novo_carro = Car('hynday', 'hb20', 2013)
 meu_novo_carro.nome_adaptado()
@@ -27,4 +30,7 @@ meu_novo_carro.ler_odometro()                               # VAJAMOS O VALOR DA
 
 meu_novo_carro.kilometragem_atualizada(43)                  # VAMOS ALTERAR AGORA A KILOMETRAGEM DO CARRO PARA 43 KM
 meu_novo_carro.ler_odometro()                               # E MOSTRAR NOVAMENTE COM VALOR ATUALIZADO
+
+meu_novo_carro.kilometragem_atualizada(23)                  # VAMOS TENTAR BAIXAR AGORA A KILOMETRAGEM DO CARRO PARA 23 KM
+meu_novo_carro.ler_odometro()                               # E MOSTRAR NOVAMENTE COM VALOR 
 
