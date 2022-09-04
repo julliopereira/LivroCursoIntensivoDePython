@@ -26,7 +26,7 @@ class Car:
 
 meu_novo_carro = Car('hynday', 'hb20', 2013)
 meu_novo_carro.nome_adaptado()
-meu_novo_carro.ler_odometro()                               # VAJAMOS O VALOR DA KILOMETRAGEM DO CARRO AO SAIR DA CONCESSIONARIA 
+meu_novo_carro.ler_odometro()                               # ALTERAMOS O VALOR DA KILOMETRAGEM DO CARRO AO SAIR DA CONCESSIONARIA 
 
 meu_novo_carro.kilometragem_atualizada(43)                  # VAMOS ALTERAR AGORA A KILOMETRAGEM DO CARRO PARA 43 KM
 meu_novo_carro.ler_odometro()                               # E MOSTRAR NOVAMENTE COM VALOR ATUALIZADO
