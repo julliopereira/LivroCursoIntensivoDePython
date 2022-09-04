@@ -32,5 +32,5 @@ class EletricCar(Car):                                                          
 
 #---------------------------------
 
-
-
+carro_eletrico = EletricCar('tesla', 'model s', 2017)
+carro_eletrico.nome_adaptado()
