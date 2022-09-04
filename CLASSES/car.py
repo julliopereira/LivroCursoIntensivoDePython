@@ -1,6 +1,6 @@
 ### INCREMENTANDO VALOR DE ATRIBUTO COM MÉTODO
 
-class Car():
+class Car:
     """Descrever um carro"""
     def __init__(self,fabrica,modelo,ano):
         """inicializa atributos que identificam um carro"""
@@ -17,6 +17,14 @@ class Car():
         """Exibe frase que mostra kilometragem do carro"""
         print(f'Este carro tem {self.odometro_lido} km.')
 
+    def kilometragem_atualizada(self, kilometragem):
+        """Incrementa valor da kilometragem"""
+        self.odometro_lido += kilometragem
+
 meu_novo_carro = Car('hynday', 'hb20', 2013)
-print(f'Meu novo carro {}')
+meu_novo_carro.nome_adaptado()
+meu_novo_carro.ler_odometro()                               # VAJAMOS O VALOR DA KILOMETRAGEM DO CARRO AO SAIR DA CONCESSIONARIA 
+
+meu_novo_carro.kilometragem_atualizada(43)                  # VAMOS ALTERAR AGORA A KILOMETRAGEM DO CARRO PARA 43 KM
+meu_novo_carro.ler_odometro()                               # E MOSTRAR NOVAMENTE COM VALOR ATUALIZADO
 
