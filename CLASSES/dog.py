@@ -1,3 +1,5 @@
+
+
 class Dog():
     """Uma tentativa de modelar um cachorro"""
     def __init__(self,name, age):                   # ATRIBUTOS
