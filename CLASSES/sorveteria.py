@@ -17,9 +17,18 @@ class Restaurant():
         """Incrementa pessoas a serem atendidas"""
         self.number_served += served
         
-class IceCreamStand():
-    def 
+class IceCreamStand(Restaurant):
+    def __init__(self,restaurant_name,cousine_type,number_served=0):
+        super().__init__(restaurant_name,cousine_type,number_served=0)
 
+    def flavors(self):
+        """sabores de sorvete"""
+        sabores = ['uva', 'pessego', 'manga']
+        for sabor in sabores:
+            print(f'{sabor} ')
+            
+
+"""
 restaurant = Restaurant('bodão','fast food')                                            # VALORES COM RESTAURANTE ABRINDO
 print(f'{restaurant.restaurant_name.title()} {restaurant.cousine_type.title()}')
 restaurant.describe_restautant()
@@ -31,3 +40,8 @@ print(f'Estamos servindo "{restaurant.number_served}" pessoas neste momento.')
 
 restaurant.increment_served(2)                                                          # MAIS DUAS PESSOAS ENTRARAM PARA SEREM ATENDIDAS
 print(f'Estamos servindo "{restaurant.number_served}" pessoas neste momento.')
+"""
+
+sabores = IceCreamStand('sorveteria piao', 'gelado')
+sabores.flavors()
+
