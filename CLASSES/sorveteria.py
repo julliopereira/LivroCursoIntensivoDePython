@@ -24,8 +24,9 @@ class IceCreamStand(Restaurant):
     def flavors(self):
         """sabores de sorvete"""
         sabores = ['uva', 'pessego', 'manga']
+        print(f'Tesmos os seguintes sabores disponíveis: \n')
         for sabor in sabores:
-            print(f'{sabor} ')
+            print(f'\t - {sabor} ')
             
 
 """
