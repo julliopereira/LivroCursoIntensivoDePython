@@ -1,0 +1,1 @@
+# Buscar o Diretório ARQUIVOS E EXCECOES neste diretorio
