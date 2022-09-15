@@ -8,9 +8,12 @@ class Die():
 
     def rool_die(self):
         count = 1
+        print('\n')
         while count <= self.slides:
             x = randint(1, 6)
-            print(x)
+            print(f'\t  - Jogou:  {x}')
             count += 1
 
-rolar = Die()
+num = int(input('Digite um numero: '))
+rolar = Die(num)
+rolar.rool_die()
