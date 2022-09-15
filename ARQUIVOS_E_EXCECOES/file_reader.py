@@ -14,3 +14,4 @@ with open('pi_digits.txt') as file_object:      # ABRIR AQUIVO pi_digits.txt
 
 
 
+
