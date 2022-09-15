@@ -31,6 +31,7 @@ class EletricCar(Car):                                                          
         super().__init__(fabrica, modelo, ano)
 
 #---------------------------------
-
+"""
 carro_eletrico = EletricCar('tesla', 'model s', 2017)
 carro_eletrico.nome_adaptado()
+"""

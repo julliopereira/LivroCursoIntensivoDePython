@@ -24,6 +24,7 @@ class Car:
         else:
             print(f'**Você não pode voltar a kilometragem')
 
+"""
 meu_novo_carro = Car('hynday', 'hb20', 2013)
 meu_novo_carro.nome_adaptado()
 meu_novo_carro.ler_odometro()                               # ALTERAMOS O VALOR DA KILOMETRAGEM DO CARRO AO SAIR DA CONCESSIONARIA 
@@ -33,4 +34,4 @@ meu_novo_carro.ler_odometro()                               # E MOSTRAR NOVAMENT
 
 meu_novo_carro.kilometragem_atualizada(23)                  # VAMOS TENTAR BAIXAR AGORA A KILOMETRAGEM DO CARRO PARA 23 KM
 meu_novo_carro.ler_odometro()                               # E MOSTRAR NOVAMENTE COM VALOR 
-
+"""
