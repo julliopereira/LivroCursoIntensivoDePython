@@ -5,15 +5,20 @@ with open(arq) as arquiv:
     arquivo = arquiv.read()
     print(arquivo)
 
-    for line in arquiv:
-        print(line.rstrip())
 
-"""
 with open(arq) as arqu:
     arquivo = arqu.readlines()
     for line in arquivo:
-        print(line)
-"""
+        print(line.strip())
+
+
+print('\n')
+
+with open(arq) as arquiv:
+    arquivo = arquiv.read()
+    mudanca = arquivo.replace('Python', 'C')
+    print(mudanca)
+
 
 
 
