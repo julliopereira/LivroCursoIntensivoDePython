@@ -9,9 +9,9 @@ while True:
         break
     divisor = input('Divisor: ')
     try:                                                # EXECUTE A DIVISÃO
-        answer = int(dividendo)/int(divisor)
-    except ValueError:                                   #
-        print('\t- Erro , Você não digitou número !!')       # MOSTRE A MENSAGEM DE ERRO PARA O USUARIO
+        answer = dividendo/divisor
+    except TypeError:                                   #
+        print('\t- Erro , Você NÃO digitou número !!')       # MOSTRE A MENSAGEM DE ERRO PARA O USUARIO
     except ZeroDivisionError:                           # EXCETO SE DIVIDIR POR ZERO
         print('\t- Não pode dividir por zero !!')       # MOSTRE A MENSAGEM DE ERRO PARA O USUARIO        
     else:
