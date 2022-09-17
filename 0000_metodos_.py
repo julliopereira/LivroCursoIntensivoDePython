@@ -16,6 +16,7 @@ print(text.rstrip())                    # rstip - Remover ESPAÇOS a direita
 print(text.lstrip())                    # rstip - Remover ESPAÇOS a esquerda
 print(text.lstrip())                    # rstip - Remover ESPAÇOS a direita e esquerda
 
+print(text.split())                     # split - Divide uma frase em uma lista ['maria', 'jose', 'arado']
 
 ### LISTAS
 

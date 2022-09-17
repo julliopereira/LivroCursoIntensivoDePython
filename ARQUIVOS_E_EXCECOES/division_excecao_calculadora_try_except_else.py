@@ -11,6 +11,6 @@ while True:
     try:                                                # EXECUTE A DIVISÃO
         answer = int(dividendo)/int(divisor)
     except ZeroDivisionError:                           # EXCETO SE DIVIDIR POR ZERO
-        print('\n\t- Não pode dividir por zero.')       # MOSTRE A MENSAGEM DE ERRO PARA O USUARIO
+        print('\t- Não pode dividir por zero.')       # MOSTRE A MENSAGEM DE ERRO PARA O USUARIO
     else:
-        print(f'\n\t- A resposta é: {int(answer)}')     # SE NÃO FOR DIVISÃO POR ZERO ENTÃO MOSTRE O RESULTADO DA DIVISÃO
+        print(f'\t- A resposta é: {int(answer)}')     # SE NÃO FOR DIVISÃO POR ZERO ENTÃO MOSTRE O RESULTADO DA DIVISÃO
