@@ -12,5 +12,5 @@ print('*** Existem uma infinidades de métodos que podem ser utilizados')
 print('-'*100)
 
 print(nome.upper())                 # upper - Altera todos os caracteres da variável para MAIUSCULAS
-print(nome.lower())                 # lower - Altera todos os caracteres da variável para minusculas
+print(name.lower())                 # lower - Altera todos os caracteres da variável para minusculas
 
