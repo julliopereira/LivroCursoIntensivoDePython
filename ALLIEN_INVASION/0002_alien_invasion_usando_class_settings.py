@@ -10,11 +10,6 @@ def run_game():
     ai_settings = Settings()
     screen = pygame.display.set_mode((ai_settings.screen_width,ai_settings.screen_height))     # usando class para definir largura e altura
     pygame.display.set_caption("Alien Invasion")
-    
-
-
-    # Define a cor de fundo
-
 
     # Inicia o laço principal do jogo
     while True:
