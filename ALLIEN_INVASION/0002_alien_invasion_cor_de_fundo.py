@@ -1,4 +1,4 @@
-# CRIANDO UMA TELA VAZIA
+# DEFININDO COR DE FUNDO
 
 import sys
 import pygame
@@ -8,6 +8,10 @@ def run_game():
     pygame.init()
     screen = pygame.display.set_mode((1200, 800))
     pygame.display.set_caption("Alien Invasion")
+    bg_color = (230, 230, 230)                            # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    # Define a cor de fundo
+
 
     # Inicia o laço principal do jogo
     while True:
@@ -15,6 +19,9 @@ def run_game():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
+
+        # Redesenha a tela a cada passagem pelo laço      # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        screen.fill(bg_color)
 
         # Deixa a tela mais recente visivel
         pygame.display.flip()
