@@ -9,8 +9,15 @@ def check_events(ship):
             sys.exit()
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
-                #Move para a direita
-                ship.rect.centerx += 1
+                ship.moving_right = True
+            elif event.key == pygame.K_LEFT:
+                ship.moving_left = True
+        elif event.type == pygame.KEYUP:
+            if event.key == pygame.K_RIGHT:
+                ship.moving_right = False
+            if event.key == pygame.K_LEFT:
+                ship.moving_left = False
+
         
 def update_screen(ai_settings,screen,ship):
     """Atualiza as imagens na tela e alterna para a nova tela"""
