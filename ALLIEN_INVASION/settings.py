@@ -10,4 +10,4 @@ class Settings():
         # Configuração da espeçonave
         self.ship_speed_factor = 1.5
 
-    
+        
