@@ -2,7 +2,7 @@
 
 # import sys                        # nao é necessario importar sys que é usado em game_functions.py
 import pygame
-import pygame.sprite import Group
+from pygame.sprite import Group
 from settings import Settings                          
 from ship import Ship                                      
 import game_functions as gf                                 # importando modulo game_function
@@ -22,12 +22,12 @@ def run_game():
     # Inicia o laço principal do jogo
     while True:
         # Observa eventos de teclado e de mouse
-        gf.check_events(ship)
+        gf.check_events(ai_settings,screen,bullets,ship)
         # Movimentação direita e esquerda
         ship.update()
         # Controle dos projéteis
         bullets.update()
         # chamando update_screen()
-        gf.update_screen(ai_settings,screen,ship)
+        gf.update_screen(ai_settings,screen,bullets,ship)
 
 run_game()

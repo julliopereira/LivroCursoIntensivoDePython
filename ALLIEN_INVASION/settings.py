@@ -1,6 +1,5 @@
 class Settings():
     """Uma classe para armazenar todas as configurações da invasão alienigena."""
-
     def __init__(self):
         """Inicializa as configurações do jogo"""
         # Configurações da tela
