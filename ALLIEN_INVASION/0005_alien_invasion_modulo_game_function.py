@@ -2,6 +2,7 @@
 
 # import sys                        # nao é necessario importar sys que é usado em game_functions.py
 import pygame
+import pygame.sprite import Group
 from settings import Settings                          
 from ship import Ship                                      
 import game_functions as gf                                 # importando modulo game_function
@@ -15,15 +16,17 @@ def run_game():
 
     # Cria uma espaçonave
     ship = Ship(ai_settings,screen)
+    # Cria um grupo no qual serão armazenados os projéteis
+    bullets = Group()
 
     # Inicia o laço principal do jogo
     while True:
         # Observa eventos de teclado e de mouse
         gf.check_events(ship)
-
         # Movimentação direita e esquerda
         ship.update()
-
+        # Controle dos projéteis
+        bullets.update()
         # chamando update_screen()
         gf.update_screen(ai_settings,screen,ship)
 
