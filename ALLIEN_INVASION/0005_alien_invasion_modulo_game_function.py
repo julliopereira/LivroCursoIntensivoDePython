@@ -22,12 +22,12 @@ def run_game():
     # Inicia o laço principal do jogo
     while True:
         # Observa eventos de teclado e de mouse
-        gf.check_events(ai_settings,screen,bullets,ship)
+        gf.check_events(ai_settings,screen,ship,bullets)
         # Movimentação direita e esquerda
         ship.update()
         # Controle dos projéteis
         bullets.update()
         # chamando update_screen()
-        gf.update_screen(ai_settings,screen,bullets,ship)
+        gf.update_screen(ai_settings,screen,ship,bullets)
 
 run_game()
