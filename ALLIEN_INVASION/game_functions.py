@@ -1,7 +1,6 @@
 import sys
 import pygame
 from bullet import Bullet
-from symbol import testlist
 
 
 def check_keydown_events(event,ai_settings,screen,ship,bullets):
@@ -11,8 +10,13 @@ def check_keydown_events(event,ai_settings,screen,ship,bullets):
     elif event.key == pygame.K_LEFT:
         ship.moving_left = True
     elif event.key == pygame.K_SPACE:
-        if len(bullets) < ai_settings.bullets_allowed:
-            # Cria um novo projétil e o adiciona ao grupo de projéteis
+        fire_bullets(ai_settings,screen,ship,bullets)
+        
+
+def fire_bullets(ai_settings,screen,ship,bullets):
+    """Dispara um projétil se o limite ainda não foi alcançado"""
+    #Cria um novo projétil e o adiciona ao grupo de projéteis
+    if len(bullets) < ai_settings.bullets_allowed:
             new_bullet = Bullet(ai_settings,screen,ship)
             bullets.add(new_bullet)
 
