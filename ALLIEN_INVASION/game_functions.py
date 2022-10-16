@@ -1,6 +1,7 @@
 import sys
 import pygame
 from bullet import Bullet
+from alien import Alien
 
 def check_events(ai_settings,screen,ship,bullets):
     """Responde a eventos de acionamento de teclas e mouse"""
@@ -46,7 +47,18 @@ def update_bullets(bullets):
         if bullet.rect.bottom <= 0:
             bullets.remove(bullet)
 
-def update_screen(ai_settings,screen,ship,alien,bullets):
+def create_fleet(ai_settings,screen,aliens):
+    """Cria uma frota completa de alienígenas."""
+    # Cria um alienígena e calcula o número de alienígenas em uma linha
+    # O espaçamento entre os alienígenas é igual à largura de um alienígena
+    alien = Alien(ai_settings,screen)
+    alien_width = alien.rect.width
+    available_space_x = ai_settings.screen_width - 2 * alien_width
+    number_aliens_x = int(available_space_x / (2 * alien_width))
+    alien.rect.x = alien.x
+    aliens.add(alien)
+
+def update_screen(ai_settings,screen,ship,aliens,bullets):
     """Atualiza as imagens na tela e alterna para a nova tela"""
     # Redesenha a tela a cada passagem pelo laço     
     screen.fill(ai_settings.bg_color)
@@ -55,6 +67,7 @@ def update_screen(ai_settings,screen,ship,alien,bullets):
         bullet.draw_bullet()
     # Adiciona a imagem da nave na tela com blit
     ship.blitme()
-    alien.blitme()
+    #alien.blitme()
+    aliens.draw(screen)
     # Deixa a tela mais recente visivel
     pygame.display.flip()
