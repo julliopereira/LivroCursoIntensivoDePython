@@ -9,7 +9,7 @@ class Alien(Sprite):
         self.screen = screen
         self.ai_settings = ai_settings
         #Carrega a imagem do alienigena e define seu atributo rect
-        self.image = pygame.image.load('images/alien.png')
+        self.image = pygame.image.load('images/alien3.png')
         self.rect = self.image.get_rect()
         #Inicia cada novo alienigena na parte superior esquerda da tela
         self.rect.x = self.rect.width
