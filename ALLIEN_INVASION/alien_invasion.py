@@ -19,12 +19,10 @@ def run_game():
     ship = Ship(ai_settings,screen)
     # Cria um grupo no qual serão armazenados os projéteis
     bullets = Group()
- 
+    # Cria um grupo no qual serão armazenados a frota de aliens
     aliens = Group()
     # Cria uma frota de alienígenas
     gf.create_fleet(ai_settings,screen,aliens)
-    # Cria um alienigena
-    #alien = Alien(ai_settings,screen)
 
     # Inicia o laço principal do jogo
     while True:

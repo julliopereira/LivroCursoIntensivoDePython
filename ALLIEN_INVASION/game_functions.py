@@ -55,8 +55,13 @@ def create_fleet(ai_settings,screen,aliens):
     alien_width = alien.rect.width
     available_space_x = ai_settings.screen_width - 2 * alien_width
     number_aliens_x = int(available_space_x / (2 * alien_width))
-    alien.rect.x = alien.x
-    aliens.add(alien)
+    # Cria a primeira linha de alienígenas
+    for alien_number in range(number_aliens_x):
+        # Cria um alienígena e o posiciona na linha
+        alien = Alien(ai_settings,screen)
+        alien.x = alien_width + 2 * alien_width * alien_number
+        alien.rect.x = alien.x
+        aliens.add(alien)
 
 def update_screen(ai_settings,screen,ship,aliens,bullets):
     """Atualiza as imagens na tela e alterna para a nova tela"""
