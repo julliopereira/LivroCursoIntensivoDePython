@@ -46,7 +46,7 @@ def update_bullets(bullets):
         if bullet.rect.bottom <= 0:
             bullets.remove(bullet)
 
-def update_screen(ai_settings,screen,ship,bullets):
+def update_screen(ai_settings,screen,ship,alien,bullets):
     """Atualiza as imagens na tela e alterna para a nova tela"""
     # Redesenha a tela a cada passagem pelo laço     
     screen.fill(ai_settings.bg_color)
@@ -55,5 +55,6 @@ def update_screen(ai_settings,screen,ship,bullets):
         bullet.draw_bullet()
     # Adiciona a imagem da nave na tela com blit
     ship.blitme()
+    alien.blitme()
     # Deixa a tela mais recente visivel
     pygame.display.flip()
