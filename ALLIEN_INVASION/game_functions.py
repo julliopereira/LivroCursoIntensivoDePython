@@ -79,7 +79,6 @@ def create_fleet(ai_settings,screen,aliens):
         #alien.rect.x = alien.x
         #aliens.add(alien)
 
-
 def update_screen(ai_settings,screen,ship,aliens,bullets):
     """Atualiza as imagens na tela e alterna para a nova tela"""
     # Redesenha a tela a cada passagem pelo laço     
