@@ -7,9 +7,9 @@ class Settings():
         self.screen_height = 800
         self.bg_color = (255, 255, 255)
         # Configuração da espeçonave
-        self.ship_speed_factor = 1.5
+        self.ship_speed_factor = 3
         # Configurações dos projeteis
-        self.bullet_speed_factor = 1
+        self.bullet_speed_factor = 5
         self.bullet_width = 5
         self.bullet_height = 18
         self.bullet_color = 60, 60, 255

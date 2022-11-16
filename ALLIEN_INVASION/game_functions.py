@@ -50,7 +50,7 @@ def update_bullets(bullets):
 def get_number_aliens_x(ai_settings,alien_width):
     """Determina o numero de alienigenas que cabe em uma linha"""
     available_space_x = ai_settings.screen_width - 2 * alien_width
-    number_aliens_x = int(available_space_x / (2 * alien_width))
+    number_aliens_x = int(available_space_x / (2 * alien_width + 1))
     return number_aliens_x
 
 def create_alien(ai_settings,screen,aliens,alien_number):
