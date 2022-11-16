@@ -50,18 +50,25 @@ def update_bullets(bullets):
 def get_number_aliens_x(ai_settings,alien_width):
     """Determina o numero de alienigenas que cabe em uma linha"""
     available_space_x = ai_settings.screen_width - 2 * alien_width
-    number_aliens_x = int(available_space_x / (2 * alien_width + 1))
+    number_aliens_x = int(available_space_x / (2 * alien_width))
     return number_aliens_x
 
-def create_alien(ai_settings,screen,aliens,alien_number):
+def get_number_rows(ai_settings,ship_height,alien_height):
+    """Determina o número de linhas ocm alienígenas que cabem na tela."""
+    available_space_y = (ai_settings.screen_height - (3 * alien_height) - ship_height)
+    number_rows = int(available_space_y / (2 * alien_height))
+    return number_rows
+
+def create_alien(ai_settings,screen,aliens,alien_number,row_number):
     # Cria um alienígena e o posiciona na linha 
     alien = Alien(ai_settings,screen)
     alien_width = alien.rect.width
     alien.x = alien_width + 2 * alien_width * alien_number
     alien.rect.x = alien.x
     aliens.add(alien)
+    alien.rect.y = alien.rect.height + 2 * alien.rect.height * row_number
 
-def create_fleet(ai_settings,screen,aliens):
+def create_fleet(ai_settings,screen,ship,aliens):
     """Cria uma frota completa de alienígenas."""
     # Cria um alienígena e calcula o número de alienígenas em uma linha
     # O espaçamento entre os alienígenas é igual à largura de um alienígena
@@ -70,14 +77,21 @@ def create_fleet(ai_settings,screen,aliens):
     #available_space_x = ai_settings.screen_width - 2 * alien_width      # CALCULO DO ESPAÇO HORIZONTAL DISPONIVEL 
     #number_aliens_x = int(available_space_x / (2 * alien_width))        # NRO DE ALIENIGENA QUE CABEM NO RESTANTE DO ESPAÇO 
     number_aliens_x = get_number_aliens_x(ai_settings,alien.rect.width) 
+    number_rows = get_number_rows (ai_settings,ship.rect.height,alien.rect.height)
     # Cria a primeira linha de alienígenas
-    for alien_number in range(number_aliens_x):
-        create_alien(ai_settings,screen,aliens,alien_number)
-        # Cria um alienígena e o posiciona na linha
-        #alien = Alien(ai_settings,screen)
-        #alien.x = alien_width + 2 * alien_width * alien_number
-        #alien.rect.x = alien.x
-        #aliens.add(alien)
+    for row_number in range(number_rows):
+
+        for alien_number in range(number_aliens_x):
+            create_alien(ai_settings,screen,aliens,alien_number,row_number)
+            # Cria um alienígena e o posiciona na linha
+            #alien = Alien(ai_settings,screen)
+            #alien.x = alien_width + 2 * alien_width * alien_number
+            #alien.rect.x = alien.x
+            #aliens.add(alien)
+
+
+
+
 
 def update_screen(ai_settings,screen,ship,aliens,bullets):
     """Atualiza as imagens na tela e alterna para a nova tela"""
