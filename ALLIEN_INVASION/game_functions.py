@@ -80,7 +80,6 @@ def create_fleet(ai_settings,screen,ship,aliens):
     number_rows = get_number_rows (ai_settings,ship.rect.height,alien.rect.height)
     # Cria a primeira linha de alienígenas
     for row_number in range(number_rows):
-
         for alien_number in range(number_aliens_x):
             create_alien(ai_settings,screen,aliens,alien_number,row_number)
             # Cria um alienígena e o posiciona na linha
@@ -103,6 +102,19 @@ def update_screen(ai_settings,screen,ship,aliens,bullets):
     # Deixa a tela mais recente visivel
     pygame.display.flip()
 
-def update_aliens(aliens):
-    """Atualiza as posições de todos os alienígenas da frota."""
+def check_fleet_edges(ai_settings, aliens):
+    """Responde apropriadamente se algum alienígena alcançou uma borda"""
+    for alien in aliens.sprites():
+        if alien.check_edges():
+            change_fleet_direction(ai_settings, aliens)
+
+def change_fleet_direction(ai_settings, aliens):
+    """Faz toda a frota descer e muda a sua direção"""
+    for alien in aliens.sprites():
+        alien.rect.y += ai_settings.fleet_drop_speed
+        ai_settings.fleet_direction *= -1
+
+def update_aliens(ai_settings, aliens):
+    """Verifica se a frota está em uma das bordas e então atualiza as posicoes de todos os alienígenas da frota."""
+    check_fleet_edges(ai_settings, aliens)
     aliens.update()
