@@ -89,10 +89,6 @@ def create_fleet(ai_settings,screen,ship,aliens):
             #alien.rect.x = alien.x
             #aliens.add(alien)
 
-
-
-
-
 def update_screen(ai_settings,screen,ship,aliens,bullets):
     """Atualiza as imagens na tela e alterna para a nova tela"""
     # Redesenha a tela a cada passagem pelo laço     
@@ -106,3 +102,7 @@ def update_screen(ai_settings,screen,ship,aliens,bullets):
     aliens.draw(screen)
     # Deixa a tela mais recente visivel
     pygame.display.flip()
+
+def update_aliens(aliens):
+    """Atualiza as posições de todos os alienígenas da frota."""
+    aliens.update()

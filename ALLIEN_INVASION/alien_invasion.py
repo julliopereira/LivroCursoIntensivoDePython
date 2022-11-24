@@ -31,13 +31,14 @@ def run_game():
         # Movimentação direita e esquerda
         ship.update()
         # Controle dos projéteis
-        #bullets.update()
+        # bullets.update()
         # Livra-se dos projéteis que desapareceram
-        #for bullet in bullets.copy():
+        # for bullet in bullets.copy():
         #    if bullet.rect.bottom <= 0:
         #        bullets.remove(bullet)
-        #print(len(bullets))
+        # print(len(bullets))
         gf.update_bullets(bullets)
+        gf.update_aliens(aliens)
         # chamando update_screen()
         gf.update_screen(ai_settings,screen,ship,aliens,bullets)
 
