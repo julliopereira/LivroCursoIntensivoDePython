@@ -136,7 +136,7 @@ def ship_hit(ai_settings,stats,screen,ship,aliens,bullets):
     stats.ships_left -= 1
     # Esvazia a lista de alienígenas e de projéteis
     aliens.empty()
-    bullets.empty()
+    bullets.empty().
     # Cria nova frota e centraliza a espaçonave
     create_fleet(ai_settings,screen,ship,aliens)
     ship.center_ship()
@@ -151,3 +151,14 @@ def update_aliens(ai_settings,stats,screen,ship,aliens,bullets):
     if pygame.sprite.spritecollideany(ship,aliens):
         #print("ship hit!!!")
         ship_hit(ai_settings,stats,screen,ship,aliens,bullets)
+
+def check_aliens_bottom(ai_settings,stats,screen,ship,aliens,bullets):
+    """Verifica se algum alienígena alcançou a parte inferior da tela."""
+    screen_rect = screen.get_rect()
+    for alien in aliens.sprites():
+        if alien.rect.bottom >= screen_rect.bottom:
+            #Trata esse caso do mesmo modo que é feito quando a espeçonave [e atingida
+            ship_hit(ai_settings,stats,screen,ship,aliens,bullets)
+            break
+    # Verifica se há algum alienígena que atingiu a parte inferior da tela
+    check_aliens_bottom(ai_settings,stats,screen,ship,aliens,bullets)

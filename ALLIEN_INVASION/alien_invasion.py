@@ -16,7 +16,6 @@ def run_game():
     screen = pygame.display.set_mode((ai_settings.screen_width,ai_settings.screen_height))     
     pygame.display.set_caption("Alien Invasion")
 
-
     # Cria uma espaçonave
     ship = Ship(ai_settings,screen)
     # Cria um grupo no qual serão armazenados os projéteis
@@ -26,7 +25,7 @@ def run_game():
     # Cria uma frota de alienígenas
     gf.create_fleet(ai_settings,screen,ship,aliens)
     # Cria uma instância para armazenar dados estísticos do jogo 
-    stats = GameStats()
+    stats = GameStats(ai_settings)
 
     # Inicia o laço principal do jogo
     while True:
