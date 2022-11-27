@@ -48,6 +48,11 @@ def update_bullets(ai_settings,screen,ship,aliens,bullets):
             bullets.remove(bullet)
     # Verifica se algum projétil atingiu os alienígenas
     # Em caso afirmativo, livra-se do projétil e do alienígena
+    check_bullet_allien_collisions(ai_settings,screen,ship,aliens,bullets)
+
+def check_bullet_allien_collisions(ai_settings,screen,ship,aliens,bullets):
+    """Responde a colisões entre projéteis e alienígenas."""
+    # Remove qualquer projétil e alienígena que tenham colidido
     collisions = pygame.sprite.groupcollide(bullets, aliens, True, True)
     if len(aliens) == 0:
         #Destrói os projéteis existentes e cria uma nova frota 
@@ -122,7 +127,10 @@ def change_fleet_direction(ai_settings, aliens):
         alien.rect.y += ai_settings.fleet_drop_speed
     ai_settings.fleet_direction *= -1
 
-def update_aliens(ai_settings, aliens):
+def update_aliens(ai_settings,ship,aliens):
     """Verifica se a frota está em uma das bordas e então atualiza as posicoes de todos os alienígenas da frota."""
     check_fleet_edges(ai_settings, aliens)
     aliens.update()
+    # Verifica se houve colisões entre alienígenas e a espaçonave 
+    if pygame.sprite.spritecollideany(ship,aliens):
+        print("ship hit!!!")
