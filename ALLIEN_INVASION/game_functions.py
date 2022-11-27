@@ -136,7 +136,7 @@ def ship_hit(ai_settings,stats,screen,ship,aliens,bullets):
     stats.ships_left -= 1
     # Esvazia a lista de alienígenas e de projéteis
     aliens.empty()
-    bullets.empty().
+    bullets.empty()
     # Cria nova frota e centraliza a espaçonave
     create_fleet(ai_settings,screen,ship,aliens)
     ship.center_ship()
