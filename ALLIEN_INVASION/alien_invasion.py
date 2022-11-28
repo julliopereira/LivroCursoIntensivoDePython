@@ -31,18 +31,19 @@ def run_game():
     while True:
         # Observa eventos de teclado e de mouse
         gf.check_events(ai_settings,screen,ship,bullets)
-        # Movimentação direita e esquerda
-        ship.update()
-        # Controle dos projéteis
-        # bullets.update()
-        # Livra-se dos projéteis que desapareceram
-        # for bullet in bullets.copy():
-        #    if bullet.rect.bottom <= 0:
-        #        bullets.remove(bullet)
-        # print(len(bullets))
-        gf.update_bullets(ai_settings,screen,ship,aliens,bullets)
-        gf.update_aliens(ai_settings,stats,screen,ship,aliens,bullets)
-        # chamando update_screen()
+        if stats.game_active:
+            # Movimentação direita e esquerda
+            ship.update()
+            # Controle dos projéteis
+            # bullets.update()
+            # Livra-se dos projéteis que desapareceram
+            # for bullet in bullets.copy():
+            #    if bullet.rect.bottom <= 0:
+            #        bullets.remove(bullet)
+            # print(len(bullets))
+            gf.update_bullets(ai_settings,screen,ship,aliens,bullets)
+            gf.update_aliens(ai_settings,stats,screen,ship,aliens,bullets)
+            # chamando update_screen()
         gf.update_screen(ai_settings,screen,ship,aliens,bullets)
 
 run_game()

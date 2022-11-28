@@ -16,6 +16,6 @@ class Settings():
         self.bullet_color = 60, 60, 255
         self.bullets_allowed = 3
         # Configurações dos alienígenas
-        self.alien_speed_factor = 4
-        self.fleet_drop_speed = 50
+        self.alien_speed_factor = 1
+        self.fleet_drop_speed = 10
         self.fleet_direction = 1
